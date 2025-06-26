@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vercel Static Test – TMC Enviro</title>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f4f4f4;
+      color: #004080;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #F0943B;
+    }
+    p {
+      color: #666766;
+    }
+  </style>
+</head>
+<body>
+  <h1>✅ Static Deploy Successful</h1>
+  <p>This test page was deployed without a build process from the <code>/public</code> folder.</p>
+  <p>Time: {{insert current datetime if desired}}</p>
+</body>
+</html>
