@@ -6,179 +6,143 @@
   <title>TMC Enviro · Static Assets</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
   <style>
-    :root {
-      --tmc-navy:#004080;
-      --tmc-orange:#ec6608;
-      --tmc-bg:#fff9f5;
+    :root{
+      /* Brand palette */
+      --tmc-blue:#002f6c;           /* Husqvarna blue */
+      --tmc-orange:#ec6608;         /* Husqvarna orange accent */
+      --tmc-bg:#fff9f5;             /* soft off‑white background */
     }
     *{box-sizing:border-box;margin:0;padding:0}
-    body {
-      font-family: 'Montserrat', sans-serif;
-      background: var(--tmc-bg);
-      color: #333;
-      display: grid;
-      grid-template-columns: 260px 1fr;
-      min-height: 100vh;
-      transition: all 0.3s ease;
+    body{
+      font-family:'Montserrat',sans-serif;
+      background:var(--tmc-bg);
+      color:#333;
+      display:flex;
+      min-height:100vh;
     }
-    /* ── Sidebar ───────────────── */
-    #sidebar {
-      background: var(--tmc-navy);
+    /* ── Side banner / nav ─────────────────────────────── */
+    nav{
+      background:var(--tmc-blue);
       color:#fff;
-      padding:1.5rem 1rem;
+      width:260px;
+      flex-shrink:0;
       display:flex;
       flex-direction:column;
-      gap:1.2rem;
-      position:sticky;
-      top:0;
-      height:100vh;
-    }
-    #sidebar img{max-width:190px;margin:0 auto 1rem auto;display:block}
-    #sidebar h2{font-size:1rem;text-transform:uppercase;letter-spacing:1px;margin-bottom:.4rem;color:var(--tmc-orange)}
-    #sidebar a{color:#fff;text-decoration:none;font-size:.95rem;line-height:1.6;opacity:.85;display:block;padding:.15rem 0;}
-    #sidebar a:hover{opacity:1;color:var(--tmc-orange)}
-
-    /* ── Top bar (mobile) ───────── */
-    header {
-      grid-column:1/3;
-      background:var(--tmc-orange);
-      padding:.6rem 1rem;
-      display:none;
       align-items:center;
-      justify-content:space-between;
+      padding:1.5rem 1rem;
+      gap:1.4rem;
     }
-    header img{height:36px}
-    #menu-btn{background:none;border:none;color:#fff;font-size:1.8rem;cursor:pointer}
+    nav img{max-width:160px;height:auto}
+    nav h2{font-size:1.2rem;font-weight:600;text-align:center}
+    nav a{
+      color:#fff; text-decoration:none; font-weight:500;
+      padding:.35rem 0; width:100%; text-align:center;
+      border-radius:4px;
+      transition:background .2s;
+    }
+    nav a:hover{background:rgba(255,255,255,.12)}
 
-    /* ── Main content ───────────── */
+    /* ── Main content ──────────────────────────────────── */
     main{
-      padding:2rem 3vw;
+      flex:1;
+      padding:2.5rem clamp(1rem,4vw,3rem);
+      overflow-y:auto;
     }
-    h1{font-size:2rem;margin-bottom:1rem;color:var(--tmc-navy)}
-    p.lead{font-size:1.1rem;margin-bottom:1.5rem;color:#555}
-    .asset-links{display:flex;flex-wrap:wrap;gap:1rem;margin-bottom:2rem}
-    .asset-links a{
+    h1{font-size:2rem;margin-bottom:.75rem;color:var(--tmc-blue)}
+    p.lead{font-size:1.125rem;margin-bottom:2rem;color:#555;max-width:42rem}
+
+    .btn{
+      display:inline-block;
       background:var(--tmc-orange);
       color:#fff;
-      padding:.75rem 1.25rem;
-      border-radius:6px;
       font-weight:700;
+      padding:.65rem 1.3rem;
+      margin:.3rem .5rem;
+      border-radius:6px;
       text-decoration:none;
-      transition:background .3s;
+      transition:background .2s;
     }
-    .asset-links a:hover{background:#d25506}
+    .btn:hover{background:#d25506}
 
-    /* ── Completion report list ─── */
-    .reports{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem}
-    .report-card{
-      background:#fff;
-      border:1px solid #eee;
-      border-radius:8px;
-      padding:1rem;
-      box-shadow:0 1px 4px rgba(0,0,0,.05);
-      display:flex;flex-direction:column;gap:.6rem;
+    /* ── Dynamic list for completion reports ───────────── */
+    #report-list{margin-top:1.8rem;display:grid;gap:.6rem}
+    #report-list a{display:block;background:#fafafa;border:1px solid #e0e0e0;
+      border-left:4px solid var(--tmc-blue);padding:.75rem 1rem;border-radius:4px;
+      text-decoration:none;color:#333;transition:background .15s}
+    #report-list a:hover{background:#f0f0f0}
+
+    footer{
+      margin-top:3rem;font-size:.825rem;color:#666;text-align:center;
     }
-    .report-card h3{font-size:1rem;color:var(--tmc-navy)}
-    .report-card a{color:var(--tmc-orange);text-decoration:none;font-weight:600;font-size:.9rem}
-    .report-card a:hover{text-decoration:underline}
 
-    /* ── Footer ─────────────────── */
-    footer{margin-top:3rem;font-size:.8rem;color:#666;text-align:center}
-
-    /* ── Responsive tweaks ──────── */
-    @media(max-width:900px){
-      body{grid-template-columns:1fr}
-      #sidebar{position:fixed;left:-260px;z-index:1000;transition:left .3s}
-      body.sidebar-open #sidebar{left:0}
-      header{display:flex}
+    /* ── Mobile tweaks ─────────────────────────────────── */
+    @media(max-width:760px){
+      nav{position:fixed;left:-260px;top:0;height:100vh;transition:left .3s}
+      nav.open{left:0}
+      .nav-toggle{position:fixed;top:1rem;left:1rem;z-index:999;
+        background:var(--tmc-orange);border:none;color:#fff;font-size:1.5rem;
+        border-radius:4px;width:42px;height:42px;cursor:pointer}
+      body.mobile main{padding-top:5rem}
     }
   </style>
 </head>
 <body>
-  <!-- Mobile top bar -->
-  <header>
-    <button id="menu-btn">☰</button>
-    <img src="/tmc-logo.png" alt="tmc enviro logo" />
-  </header>
+  <!-- Mobile toggle BTN -->
+  <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('nav').classList.toggle('open'); document.body.classList.toggle('mobile');">☰</button>
 
-  <!-- Sidebar navigation -->
-  <aside id="sidebar">
-    <img src="/tmc-logo.png" alt="tmc enviro logo" />
+  <!-- Side banner -->
+  <nav>
+    <img src="/tmc-logo.png" alt="TMC Enviro logo" />
+    <h2>Static Assets</h2>
+    <a href="#style-guide">Brand Style Guide</a>
+    <a href="#logo">Logos</a>
+    <a href="#reports">Completion Reports</a>
+  </nav>
 
-    <nav>
-      <h2>Assets</h2>
-      <a href="/tmc_styles_overview.pdf" target="_blank">Style guide (PDF)</a>
-      <a href="/tmc-logo.png" target="_blank">Logo (PNG)</a>
-    </nav>
-
-    <nav>
-      <h2>Completion reports</h2>
-      <div id="report-links">
-        <p style="font-size:.8rem;opacity:.7">Loading…</p>
-      </div>
-    </nav>
-  </aside>
-
-  <!-- Main content area -->
+  <!-- Main -->
   <main>
-    <h1>TMC Enviro Static Assets</h1>
-    <p class="lead">Official repository serving logos, style guides and auto-generated completion reports for use by tmc enviro AI agents & documents.</p>
+    <h1 id="intro">TMC Enviro Static Assets</h1>
+    <p class="lead">Official repository for assets used by tmc enviro AI agents&mdash;logos, style guides, and auto‑generated completion reports.</p>
 
-    <div class="asset-links">
-      <a href="/tmc_styles_overview.pdf" target="_blank">📑 Style Guide</a>
-      <a href="/tmc-logo.png" target="_blank">🖼️ Logo PNG</a>
-    </div>
-
-    <section>
-      <h2 style="color:var(--tmc-navy);margin-bottom:1rem">Latest Completion Reports</h2>
-      <div class="reports" id="reports-grid">
-        <!-- Cards injected by JS -->
-      </div>
+    <section id="style-guide">
+      <h2>Style guide</h2>
+      <a href="/tmc_styles_overview.pdf" class="btn" target="_blank">View PDF</a>
     </section>
+
+    <section id="logo" style="margin-top:2.5rem">
+      <h2>Logos</h2>
+      <a href="/tmc-logo.png" class="btn" target="_blank">Download PNG</a>
+    </section>
+
+    <section id="reports" style="margin-top:2.5rem">
+      <h2>Completion reports</h2>
+      <div id="report-list">Loading…</div>
+    </section>
+
     <footer>
-      tmc enviro | Static Assets Repository | For internal document & web use
+      tmc enviro · Static assets repository · internal use
     </footer>
   </main>
 
   <script>
-    // Mobile sidebar toggle
-    const menuBtn = document.getElementById('menu-btn');
-    menuBtn && menuBtn.addEventListener('click',()=>{
-      document.body.classList.toggle('sidebar-open');
-    });
-
-    // Fetch completion report list from GitHub API
-    async function loadReports(){
-      const api = 'https://api.github.com/repos/TMCenviro/tmc-static-assets/contents/public';
+    // Fetch list of completion reports dynamically from GitHub API
+    (async()=>{
+      const el=document.getElementById('report-list');
       try{
-        const res = await fetch(api);
-        if(!res.ok) throw new Error('GH API error');
-        const files = await res.json();
-        const reports = files.filter(f=>f.name.startsWith('completion-report') && f.name.endsWith('.html'));
-        const listContainer = document.getElementById('report-links');
-        const grid = document.getElementById('reports-grid');
-        listContainer.innerHTML = '';
-        if(reports.length===0){
-          listContainer.innerHTML = '<p style="font-size:.8rem;opacity:.7">No reports yet</p>';
-          return;
-        }
-        reports.forEach(f=>{
-          const link = document.createElement('a');
-          link.href = `/${f.name}`;
-          link.textContent = f.name.replace('completion-report-','').replace('.html','');
-          link.style.display='block';
-          link.target='_blank';
-          listContainer.appendChild(link);
-
-          // also create card in main grid
-          const card = document.createElement('div');
-          card.className='report-card';
-          card.innerHTML = `<h3>${link.textContent}</h3><a href='/${f.name}' target='_blank'>Open report →</a>`;
-          grid.appendChild(card);
+        const res=await fetch('https://api.github.com/repos/TMCenviro/tmc-static-assets/contents/public');
+        const files=await res.json();
+        const reps=files.filter(f=>f.name.startsWith('completion-report-')&&f.name.endsWith('.html'));
+        if(!reps.length){el.textContent='No reports found.';return;}
+        el.innerHTML='';
+        reps.forEach(f=>{
+          const a=document.createElement('a');
+          a.href=`/${f.name}`;
+          a.textContent=f.name.replace('completion-report-','').replace('.html','').replace(/-/g,' ');
+          a.target='_blank';
+          el.appendChild(a);
         });
-      }catch(e){console.error(e);}
-    }
-    loadReports();
+      }catch(e){el.textContent='Unable to load list.';console.error(e)}
+    })();
   </script>
 </body>
 </html>
