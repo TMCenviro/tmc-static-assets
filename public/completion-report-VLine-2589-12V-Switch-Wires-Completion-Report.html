@@ -2,185 +2,208 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>V/Line Completion Report</title>
-  <style>
-    body {
-      font-family: 'Montserrat', sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      color: #333;
-    }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    h2, h3 {
-      color: #004080;
-    }
-    .photo-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 10px;
-      margin: 20px 0;
-    }
-    .photo-grid img {
-      width: 100%;
-      height: auto;
-      border: 2px solid #ec6608;
-    }
-    .tmc-header, .tmc-footer {
-      background: #004080;
-      color: #fff;
-      padding: 10px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-    .tmc-header {
-      border-bottom: 4px solid #ec6608;
-    }
-    .tmc-footer {
-      background: #f5f7fa;
-      color: #444;
-      border-top: 4px solid #ec6608;
-    }
-    .tmc-footer a {
-      color: #004080;
-      text-decoration: none;
-      margin: 0 5px;
-    }
-    .tmc-footer a:hover {
-      text-decoration: underline;
-    }
-    @media print {
-      .tmc-header, .tmc-footer {
-        -webkit-print-color-adjust: exact;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V/Line Completion Report</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h2, h3 {
+            color: #004080;
+        }
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .photo-grid img {
+            width: 100%;
+            height: auto;
+            border: 2px solid #ec6608;
+        }
+        .tmc-header, .tmc-footer {
+            background: #004080;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .tmc-header {
+            border-bottom: 4px solid #ec6608;
+        }
+        .tmc-footer {
+            border-top: 4px solid #ec6608;
+            background: #f5f7fa;
+            color: #444;
+        }
+        .tmc-logo {
+            height: 48px;
+            width: auto;
+        }
+        .tmc-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+        .tmc-meta {
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .tmc-link {
+            color: #004080;
+            text-decoration: none;
+            transition: opacity 0.2s ease-in-out;
+        }
+        .tmc-link:hover {
+            opacity: 0.7;
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .tmc-header, .tmc-footer {
+                flex-direction: column;
+                text-align: center;
+            }
+            .tmc-title {
+                font-size: 1.1rem;
+            }
+            .tmc-logo {
+                height: 40px;
+            }
+        }
+        @media print {
+            .tmc-header, .tmc-footer {
+                -webkit-print-color-adjust: exact;
+            }
+        }
+    </style>
 </head>
 <body>
-  <!-- TMC Enviro Branded Header -->
-  <header class="tmc-header">
-    <div class="tmc-header-left">
-      <img src="https://tmc-static-assets.vercel.app/tmc-logo.png" alt="TMC Enviro logo" class="tmc-logo" style="height: 48px; width: auto; margin-right: 1rem;">
-      <h1 class="tmc-title">V/Line Completion Report – 12V Switch Wires Cleared (Project 2589)</h1>
-    </div>
-    <div class="tmc-header-right">
-      <span class="tmc-meta">2025-06-29</span>
-    </div>
-  </header>
+    <!-- TMC Enviro Branded Header -->
+    <header class="tmc-header">
+        <div class="tmc-header-left">
+            <img src="https://tmc-static-assets.vercel.app/tmc-logo.png" alt="TMC Enviro logo" class="tmc-logo">
+            <h1 class="tmc-title">V/Line Completion Report – 12V Switch Wires Cleared (Project 2589)</h1>
+        </div>
+        <div class="tmc-header-right">
+            <span class="tmc-meta">2025-06-29</span>
+        </div>
+    </header>
 
-  <div class="container">
-    <h2>Summary</h2>
-    <p>TMC Enviro successfully completed the clearance of 12 Volt Switching Wires on the ARTC pole line in Wandong, Victoria, Australia, as part of stage two of the project for V/Line. The work followed prior access track works and was executed using ELC-approved equipment and ELC ESI Cert II trained staff. The clearance achieved was over 1500mm, significantly exceeding the minimum requirement of 300mm. No overhang was cleared as the conductors were insulated.</p>
+    <div class="container">
+        <h2>Summary</h2>
+        <p>TMC Enviro successfully completed the clearance of 12 Volt Switching Wires on the ARTC pole line in Wandong, Victoria, Australia, as part of stage two of the project for V/Line. The work followed prior access track works and was executed using ELC-approved equipment and ELC ESI Cert II trained staff. The clearance achieved was over 1500mm, significantly exceeding the minimum requirement of 300mm. No overhang was cleared as the conductors were insulated.</p>
 
-    <h2>Details</h2>
-    <ul>
-      <li>Status: Completed</li>
-      <li>Version: 6</li>
-      <li>Record ID: 7c593bba-6db7-4c36-9bb5-00802217c808</li>
-      <li>Created At: 2025-06-24T02:30:05Z</li>
-      <li>Updated At: 2025-06-29T01:56:31Z</li>
-      <li>Created By: Greg Woodburn</li>
-      <li>Created By ID: 505bf0de-7f91-40c9-a601-57f9a76a78a2</li>
-      <li>Updated By: Greg Woodburn</li>
-      <li>Updated By ID: 505bf0de-7f91-40c9-a601-57f9a76a78a2</li>
-      <li>Created Location: Latitude -37.5753755, Longitude 143.7831392, Altitude 437.8m</li>
-      <li>Updated Location: Latitude -37.5452081, Longitude 143.782714, Altitude 459.6m</li>
-      <li>Created Duration: 65 seconds</li>
-      <li>Updated Duration: 7 seconds</li>
-      <li>Edited Duration: 523 seconds</li>
-      <li>Form ID: cccf176e-7875-4ec6-99c9-07090ef30ce0</li>
-      <li>Project ID: 3fc09cd4-b671-4da9-b700-ab97e399d687</li>
-      <li>Changeset ID: 96b38043-5744-4649-ada7-cf37045ae7eb</li>
-      <li>Assigned To: Not assigned</li>
-      <li>Form Values:
+        <h2>Details</h2>
         <ul>
-          <li>1681: Yes</li>
-          <li>7950: Using ELC approved Equipment and ELC ESI Cert II trained staff. TMC enviro cleared all of the 12 Volt Switching Wires on the ARTC pole line. This was stage two projects after access Track Works completed weeks prior. No overhang cleared as Conductors are Insulated. Minimum Clearance Required is 300mm. TMC enviro achieved >1500mm Clearance for all.</li>
-          <li>424d: Clear all Conductors as per vLine ELCMP</li>
-          <li>511c: Address - Ogradys Road, 670, Wandong, Victoria, 3758, Australia</li>
-          <li>9a8c: Photos with captions indicating clearance work completion</li>
+            <li>Status: Completed</li>
+            <li>Version: 6</li>
+            <li>Record ID: 7c593bba-6db7-4c36-9bb5-00802217c808</li>
+            <li>Created At: 2025-06-24T02:30:05Z</li>
+            <li>Updated At: 2025-06-29T01:56:31Z</li>
+            <li>Created By: Greg Woodburn</li>
+            <li>Created By ID: 505bf0de-7f91-40c9-a601-57f9a76a78a2</li>
+            <li>Updated By: Greg Woodburn</li>
+            <li>Updated By ID: 505bf0de-7f91-40c9-a601-57f9a76a78a2</li>
+            <li>Created Location: Latitude -37.5753755, Longitude 143.7831392, Altitude 437.8m</li>
+            <li>Updated Location: Latitude -37.5452081, Longitude 143.782714, Altitude 459.6m</li>
+            <li>Created Duration: 65 seconds</li>
+            <li>Updated Duration: 7 seconds</li>
+            <li>Edited Duration: 523 seconds</li>
+            <li>Form ID: cccf176e-7875-4ec6-99c9-07090ef30ce0</li>
+            <li>Project ID: 3fc09cd4-b671-4da9-b700-ab97e399d687</li>
+            <li>Changeset ID: 96b38043-5744-4649-ada7-cf37045ae7eb</li>
+            <li>Assigned To: Not assigned</li>
+            <li>Form Values:
+                <ul>
+                    <li>1681: Yes</li>
+                    <li>7950: Using ELC approved Equipment and ELC ESI Cert II trained staff. TMC enviro cleared all of the 12 Volt Switching Wires on the ARTC pole line. This was stage two projects after access Track Works completed weeks prior. No overhang cleared as Conductors are Insulated. Minimum Clearance Required is 300mm. TMC enviro achieved >1500mm Clearance for all.</li>
+                    <li>424d: Clear all Conductors as per vLine ELCMP</li>
+                    <li>511c: Address - Ogradys Road, 670, Wandong, Victoria, 3758, Australia</li>
+                    <li>9a8c: Photos with captions indicating clearance work completion</li>
+                </ul>
+            </li>
+            <li>Geometry: LineString with coordinates along the project path</li>
+            <li>Project Name: 2589 - V/Line 55.500 - 58.630 DBKWDG Access Track Maintenance Equipment</li>
+            <li>Project Status: Active</li>
+            <li>Project Record Count: 3</li>
+            <li>Project Form Count: 2</li>
+            <li>Project Created At: 2025-05-26T03:20:24Z</li>
+            <li>Project Updated At: 2025-05-26T03:20:24Z</li>
         </ul>
-      </li>
-      <li>Geometry: LineString with coordinates along the project path</li>
-      <li>Project Name: 2589 - V/Line 55.500 - 58.630 DBKWDG Access Track Maintenance Equipment</li>
-      <li>Project Status: Active</li>
-      <li>Project Record Count: 3</li>
-      <li>Project Form Count: 2</li>
-      <li>Project Created At: 2025-05-26T03:20:24Z</li>
-      <li>Project Updated At: 2025-05-26T03:20:24Z</li>
-    </ul>
 
-    <h2>Assumptions</h2>
-    <ul>
-      <li>The project is assumed to be for V/Line, as indicated by the project name.</li>
-      <li>The project start and end dates are not provided; it is assumed the project is ongoing or recently completed due to the active status.</li>
-      <li>The customer and external job ID are not specified, assumed to be internal or not applicable.</li>
-    </ul>
+        <h2>Assumptions</h2>
+        <ul>
+            <li>The project is assumed to be for V/Line, as indicated by the project name.</li>
+            <li>The project start and end dates are not provided; it is assumed the project is ongoing or recently completed due to the active status.</li>
+            <li>The customer and external job ID are not specified, assumed to be internal or not applicable.</li>
+        </ul>
 
-    <h2>Findings/Recommendations</h2>
-    <ul>
-      <li>The clearance achieved exceeds the minimum required clearance, indicating successful completion of the task.</li>
-      <li>It is recommended to document the project start and end dates for future reference and project tracking.</li>
-      <li>Consider assigning the project to a specific individual or team for accountability and follow-up actions.</li>
-      <li>Ensure all project-related data, such as customer details and external job IDs, are recorded for comprehensive project documentation.</li>
-    </ul>
+        <h2>Findings/Recommendations</h2>
+        <ul>
+            <li>The clearance achieved exceeds the minimum required clearance, indicating successful completion of the task.</li>
+            <li>It is recommended to document the project start and end dates for future reference and project tracking.</li>
+            <li>Consider assigning the project to a specific individual or team for accountability and follow-up actions.</li>
+            <li>Ensure all project-related data, such as customer details and external job IDs, are recorded for comprehensive project documentation.</li>
+        </ul>
 
-    <h2>Photos</h2>
-    <div class="photo-grid">
-      <figure>
-        <img src="https://tmc-static-assets.vercel.app/5a2ede16-3d18-48a9-81d1-f50bf0c37d4e.jpg" alt="After 12V Switch Wires Cleared 7" style="max-width:100%; height:auto;">
-        <figcaption>After 12V Switch Wires Cleared 7</figcaption>
-      </figure>
-      <figure>
-        <img src="https://tmc-static-assets.vercel.app/0b621b2a-d9bc-4f1d-8ea5-0991630083ac.jpg" alt="After 12V Switch Wires Cleared 6" style="max-width:100%; height:auto;">
-        <figcaption>After 12V Switch Wires Cleared 6</figcaption>
-      </figure>
-      <figure>
-        <img src="https://tmc-static-assets.vercel.app/e7a0687e-b102-486a-b47c-255286062eeb.jpg" alt="After 12V Switch Wires Cleared 5" style="max-width:100%; height:auto;">
-        <figcaption>After 12V Switch Wires Cleared 5</figcaption>
-      </figure>
-      <figure>
-        <img src="https://tmc-static-assets.vercel.app/3875b774-b1e7-455a-9135-fbf6aa872879.jpg" alt="After 12V Switch Wires Cleared 4" style="max-width:100%; height:auto;">
-        <figcaption>After 12V Switch Wires Cleared 4</figcaption>
-      </figure>
-      <figure>
-        <img src="https://tmc-static-assets.vercel.app/7b5749a1-5541-42bb-97ef-48253a17ee1c.jpg" alt="After 12V Switch Wires Cleared 3" style="max-width:100%; height:auto;">
-        <figcaption>After 12V Switch Wires Cleared 3</figcaption>
-      </figure>
-      <figure>
-        <img src="https://tmc-static-assets.vercel.app/09c7b993-17f7-4e1b-a103-c2344f606030.jpg" alt="After 12V Switch Wires Cleared 2" style="max-width:100%; height:auto;">
-        <figcaption>After 12V Switch Wires Cleared 2</figcaption>
-      </figure>
-      <figure>
-        <img src="https://tmc-static-assets.vercel.app/deea06d7-81f7-4543-96e0-afeee6708e3b.jpg" alt="After 12V Switch Wires Cleared 1" style="max-width:100%; height:auto;">
-        <figcaption>After 12V Switch Wires Cleared 1</figcaption>
-      </figure>
+        <h2>Photos</h2>
+        <div class="photo-grid">
+            <figure>
+                <img src="https://tmc-static-assets.vercel.app/5a2ede16-3d18-48a9-81d1-f50bf0c37d4e.jpg" alt="After 12V Switch Wires Cleared 7" style="max-width:100%; height:auto;">
+                <figcaption>After 12V Switch Wires Cleared 7</figcaption>
+            </figure>
+            <figure>
+                <img src="https://tmc-static-assets.vercel.app/0b621b2a-d9bc-4f1d-8ea5-0991630083ac.jpg" alt="After 12V Switch Wires Cleared 6" style="max-width:100%; height:auto;">
+                <figcaption>After 12V Switch Wires Cleared 6</figcaption>
+            </figure>
+            <figure>
+                <img src="https://tmc-static-assets.vercel.app/e7a0687e-b102-486a-b47c-255286062eeb.jpg" alt="After 12V Switch Wires Cleared 5" style="max-width:100%; height:auto;">
+                <figcaption>After 12V Switch Wires Cleared 5</figcaption>
+            </figure>
+            <figure>
+                <img src="https://tmc-static-assets.vercel.app/3875b774-b1e7-455a-9135-fbf6aa872879.jpg" alt="After 12V Switch Wires Cleared 4" style="max-width:100%; height:auto;">
+                <figcaption>After 12V Switch Wires Cleared 4</figcaption>
+            </figure>
+            <figure>
+                <img src="https://tmc-static-assets.vercel.app/7b5749a1-5541-42bb-97ef-48253a17ee1c.jpg" alt="After 12V Switch Wires Cleared 3" style="max-width:100%; height:auto;">
+                <figcaption>After 12V Switch Wires Cleared 3</figcaption>
+            </figure>
+            <figure>
+                <img src="https://tmc-static-assets.vercel.app/09c7b993-17f7-4e1b-a103-c2344f606030.jpg" alt="After 12V Switch Wires Cleared 2" style="max-width:100%; height:auto;">
+                <figcaption>After 12V Switch Wires Cleared 2</figcaption>
+            </figure>
+            <figure>
+                <img src="https://tmc-static-assets.vercel.app/deea06d7-81f7-4543-96e0-afeee6708e3b.jpg" alt="After 12V Switch Wires Cleared 1" style="max-width:100%; height:auto;">
+                <figcaption>After 12V Switch Wires Cleared 1</figcaption>
+            </figure>
+        </div>
     </div>
-  </div>
 
-  <!-- TMC Enviro Branded Footer -->
-  <footer class="tmc-footer">
-    <div class="tmc-footer-left">
-      <p class="tmc-generated">
-        Generated by <strong>systems&nbsp;@&nbsp;tmc&nbsp;enviro</strong>
-      </p>
-    </div>
-    <div class="tmc-footer-right">
-      <p class="tmc-contact">
-        <a href="https://www.tmcenviro.com.au" target="_blank" class="tmc-link">tmcenviro.com.au</a> |
-        <a href="mailto:systems@tmcenviro.com.au" class="tmc-link">systems@tmcenviro.com.au</a> |
-        <a href="tel:+61458922033" class="tmc-link">+61 458 922 033</a>
-      </p>
-    </div>
-  </footer>
+    <!-- TMC Enviro Branded Footer -->
+    <footer class="tmc-footer">
+        <div class="tmc-footer-left">
+            <p class="tmc-generated">
+                Generated by <strong>systems&nbsp;@&nbsp;tmc&nbsp;enviro</strong>
+            </p>
+        </div>
+        <div class="tmc-footer-right">
+            <p class="tmc-contact">
+                <a href="https://www.tmcenviro.com.au" target="_blank" class="tmc-link">tmcenviro.com.au</a> |
+                <a href="mailto:systems@tmcenviro.com.au" class="tmc-link">systems@tmcenviro.com.au</a> |
+                <a href="tel:+61458922033" class="tmc-link">+61 458 922 033</a>
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
 ```
