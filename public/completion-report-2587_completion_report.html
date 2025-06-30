@@ -1,175 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Access Track Maintenance Donnybrook - Wandong Completion Report</title>
-    <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            background-color: #f4f4f4;
-        }
-        header {
-            background: #273A60;
-            color: #fff;
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        footer {
-            background: #273A60;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: static;
-        }
-        .container {
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .summary, .details, .findings, .photo-documentation {
-            margin-bottom: 20px;
-            background: #fff;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .details table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        .details th, .details td {
-            padding: 10px;
-            border: 1px solid #ddd;
-        }
-        .photo-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-            gap: 10px;
-        }
-        .photo-grid img {
-            width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-        .photo-grid div {
-            text-align: center;
-            font-size: 0.9em;
-            color: #555;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Access Track Maintenance Donnybrook - Wandong Completion Report</title>
+  <style>
+    /* ----------  COLOUR TOKENS  ---------- */
+    :root {
+      --tmc-blue: #273A60;   /* Husqvarna dark blue */
+      --tmc-orange: #ec6608; /* TMC accent orange  */
+    }
+
+    /* ----------  BASE  ---------- */
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background: #f4f4f4;
+    }
+
+    /* ----------  HEADER  ---------- */
+    header {
+      background: var(--tmc-blue);
+      color: #fff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 4px solid var(--tmc-orange); /* thin orange line */
+    }
+    header h1 { margin: 0; font-size: 1.5em; }
+    header img { height: 50px; }
+
+    /* ----------  LAYOUT  ---------- */
+    .content { max-width: 750px; margin: 0 auto; padding: 20px; }
+
+    /* ----------  PROJECT INFO BLOCK  ---------- */
+    .project-info {
+      background: var(--tmc-orange);
+      color: #fff;
+      padding: 20px;
+      border-radius: 6px;
+      margin-bottom: 24px;
+    }
+    .project-info h2 { margin-top: 0; }
+    .project-info p { margin: 4px 0; font-weight: 500; }
+
+    /* ----------  SECTION CARDS  ---------- */
+    section {
+      background: #fff;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.08);
+      margin-bottom: 24px;
+    }
+    section h2 { color: var(--tmc-blue); margin-top: 0; }
+    section h3 { color: var(--tmc-blue); margin: 16px 0 8px; font-size: 1.05em; }
+
+    /* ----------  PHOTO GRID  ---------- */
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+    }
+    .photo-grid figure { margin: 0; }
+    .photo-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+    .photo-grid figcaption {
+      font-size: 0.8em;
+      text-align: center;
+      margin-top: 4px;
+    }
+
+    /* ----------  FOOTER  ---------- */
+    footer {
+      background: var(--tmc-blue);
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      border-top: 4px solid var(--tmc-orange); /* thin orange line */
+      position: static;          /* flows with page */
+      position: running(page-footer);
+    }
+    footer a { color: var(--tmc-orange); text-decoration: none; }
+
+    @page {
+      margin: 20mm 15mm 30mm;  /* leave room for footer */
+      @bottom-center { content: element(page-footer); }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>V/Line – Completion Report</h1>
-        <img src="https://tmc-static-assets.vercel.app/tmc-logo.png" alt="TMC Logo" style="height:50px;">
-    </header>
-    <div class="container">
-        <section class="summary">
-            <h2>Summary</h2>
-            <p>Vegetation was mulched and trees trimmed along Donovans Lane to reinstate access for fuel tankers to the ARTC generator powering signals. The project was completed over two days using forestry mulchers, EWP, and woodchippers, ensuring improved access and safety under overhead powerlines.</p>
-        </section>
-        <section class="details">
-            <h2>Project Details</h2>
-            <table>
-                <tr>
-                    <th>Vegetation Mulching and Tree Trimming Completed</th>
-                    <td>TMC enviro crews mulched vegetation under ARTC pole lines. Also trimmed trees to improve access for Fuel Tankers to Generator powering signals. 2 days to complete. With Forestry Mulchers. EWP and woodchippers.</td>
-                </tr>
-                <tr>
-                    <th>Scope of Works</th>
-                    <td>Trim trees and mulch underline. Clearance req for tanker to get to generator in the area</td>
-                </tr>
-                <tr>
-                    <th>Address</th>
-                    <td>268–300 Donovans La, Beveridge, VIC 3753, AU</td>
-                </tr>
-                <tr>
-                    <th>Date of Works</th>
-                    <td>2025-06-07</td>
-                </tr>
-                <tr>
-                    <th>Status</th>
-                    <td>Completed</td>
-                </tr>
-                <tr>
-                    <th>Edited Duration (minutes)</th>
-                    <td>656</td>
-                </tr>
-                <tr>
-                    <th>Created Duration (minutes)</th>
-                    <td>62</td>
-                </tr>
-                <tr>
-                    <th>Updated Duration (minutes)</th>
-                    <td>7</td>
-                </tr>
-                <tr>
-                    <th>Project Name</th>
-                    <td>2587 - V/Line 37.662-38.200 Donovans Lane DBKWDG Access Track Maintenance Equipment</td>
-                </tr>
-                <tr>
-                    <th>External Job ID</th>
-                    <td>2587</td>
-                </tr>
-                <tr>
-                    <th>Start Date</th>
-                    <td>2025-05-07T00:00:00.000Z</td>
-                </tr>
-                <tr>
-                    <th>End Date</th>
-                    <td>2025-06-30T00:00:00.000Z</td>
-                </tr>
-            </table>
-        </section>
-        <section class="findings">
-            <h2>Findings & Recommendations</h2>
-            <ul>
-                <li>Vegetation under ARTC pole lines was mulched to improve access.</li>
-                <li>Trees were trimmed to allow fuel tanker access to the generator.</li>
-                <li>Works were completed over two days using forestry mulchers, EWP, and woodchippers.</li>
-                <li>Clearance was achieved for tanker access under overhead powerlines.</li>
-                <li>Project status marked as completed.</li>
-            </ul>
-        </section>
-        <section class="photo-documentation">
-            <h2>Photo Documentation</h2>
-            <div class="photo-grid">
-                <div>
-                    <img src="https://tmc-static-assets.vercel.app/a117491a-6b18-491b-819b-c639419fad89.jpg" alt="Before 1" />
-                    <div>Before 1</div>
-                </div>
-                <div>
-                    <img src="https://tmc-static-assets.vercel.app/312d9b6d-7e54-449c-83bd-bfad13c2e579.jpg" alt="Before 2. Tree Trimming" />
-                    <div>Before 2. Tree Trimming</div>
-                </div>
-                <div>
-                    <img src="https://tmc-static-assets.vercel.app/5e822ce4-5497-4141-ab67-886ef6d7fc14.jpg" alt="During 1. looking at generator." />
-                    <div>During 1. looking at generator.</div>
-                </div>
-                <div>
-                    <img src="https://tmc-static-assets.vercel.app/cf21d91b-b936-4e8b-9e8e-a9e1b445e6a1.jpg" alt="After 1. Cleared Mulching Completed" />
-                    <div>After 1. Cleared Mulching Completed</div>
-                </div>
-                <div>
-                    <img src="https://tmc-static-assets.vercel.app/ee686d5c-d5ea-4361-9d4a-c83ee66fc9f5.jpg" alt="After 2. Tree Trimming" />
-                    <div>After 2. Tree Trimming</div>
-                </div>
-            </div>
-        </section>
+  <!-- Header -->
+  <header>
+    <h1>V/Line – Completion Report</h1>
+    <img src="https://tmc-static-assets.vercel.app/tmc-logo.png" alt="TMC Logo">
+  </header>
+
+  <div class="content">
+
+    <!-- Project Info Block -->
+    <div class="project-info">
+      <h2>Access Track Maintenance Donnybrook - Wandong Completion Report</h2>
+      <p><strong>Client:</strong> V/Line</p>
+      <p><strong>Location:</strong> Beveridge, VIC</p>
+      <p><strong>Date Completed:</strong> 2025-06-30</p>
     </div>
-    <footer>
-        <p>Generated by <strong>Systems @ TMC enviro</strong></p>
-        <p><a href="https://www.tmcenviro.com.au" target="_blank">www.tmcenviro.com.au</a></p>
-        <p>Email: <a href="mailto:systems@tmcenviro.com.au">systems@tmcenviro.com.au</a> | Phone: <a href="tel:+61458922033">+61 458 922 033</a></p>
-    </footer>
+
+    <!-- Summary -->
+    <section>
+      <h2>Summary</h2>
+      <p>The project aimed to reinstate access for fuel tankers to the ARTC generator by mulching vegetation and trimming trees along Donovans Lane. The work was completed over two days, ensuring improved clearance under powerlines and compliance with access track requirements.</p>
+    </section>
+
+    <!-- Findings & Recommendations -->
+    <section>
+      <h2>Key Findings</h2>
+      <ul>
+        <li>Vegetation under ARTC pole lines was mulched to improve access.</li>
+        <li>Trees were trimmed to allow fuel tanker access to the generator.</li>
+        <li>Works were completed over two days using forestry mulchers, EWP, and woodchippers.</li>
+        <li>Clearance under overhead powerlines was restored as per access requirements.</li>
+        <li>Project status marked as completed.</li>
+      </ul>
+    </section>
+
+    <!-- Media -->
+    <section>
+      <h2>Media</h2>
+
+      <!-- Before -->
+      <h3>Before</h3>
+      <div class="photo-grid">
+        <figure>
+          <img src="https://tmc-static-assets.vercel.app/a117491a-6b18-491b-819b-c639419fad89.jpg" alt="Before 1" style="max-width:100%; height:auto;" />
+          <figcaption>Before 1</figcaption>
+        </figure>
+        <figure>
+          <img src="https://tmc-static-assets.vercel.app/312d9b6d-7e54-449c-83bd-bfad13c2e579.jpg" alt="Before 2. Tree Trimming" style="max-width:100%; height:auto;" />
+          <figcaption>Before 2. Tree Trimming</figcaption>
+        </figure>
+      </div>
+
+      <!-- During -->
+      <h3>During</h3>
+      <div class="photo-grid">
+        <figure>
+          <img src="https://tmc-static-assets.vercel.app/5e822ce4-5497-4141-ab67-886ef6d7fc14.jpg" alt="During 1. looking at generator." style="max-width:100%; height:auto;" />
+          <figcaption>During 1. looking at generator.</figcaption>
+        </figure>
+      </div>
+
+      <!-- After -->
+      <h3>After</h3>
+      <div class="photo-grid">
+        <figure>
+          <img src="https://tmc-static-assets.vercel.app/cf21d91b-b936-4e8b-9e8e-a9e1b445e6a1.jpg" alt="After 1. Cleared Mulching Completed" style="max-width:100%; height:auto;" />
+          <figcaption>After 1. Cleared Mulching Completed</figcaption>
+        </figure>
+        <figure>
+          <img src="https://tmc-static-assets.vercel.app/ee686d5c-d5ea-4361-9d4a-c83ee66fc9f5.jpg" alt="After 2. Tree Trimming" style="max-width:100%; height:auto;" />
+          <figcaption>After 2. Tree Trimming</figcaption>
+        </figure>
+        <figure>
+          <img src="https://tmc-static-assets.vercel.app/5fb73068-1cb8-49b3-9db7-cab8a494956f.jpg" alt="Fulcrum Photo 5fb73068-1cb8-49b3-9db7-cab8a494956f" style="max-width:100%; height:auto;" />
+          <figcaption>Fulcrum Photo</figcaption>
+        </figure>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>Generated by <strong>Systems @ TMC enviro</strong></p>
+    <p><a href="https://www.tmcenviro.com.au" target="_blank">www.tmcenviro.com.au</a></p>
+    <p>Email: <a href="mailto:systems@tmcenviro.com.au">systems@tmcenviro.com.au</a> | Phone: <a href="tel:+61458922033">+61&nbsp;458&nbsp;922&nbsp;033</a></p>
+  </footer>
 </body>
 </html>
