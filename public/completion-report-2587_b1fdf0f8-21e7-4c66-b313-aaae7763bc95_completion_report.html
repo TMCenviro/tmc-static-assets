@@ -13,7 +13,7 @@
             padding: 0;
             color: #333;
         }
-        .header {
+        header {
             background-color: #f8f9fa;
             padding: 20px;
             display: flex;
@@ -21,13 +21,12 @@
             align-items: center;
             border-bottom: 2px solid #e9ecef;
         }
-        .header h1 {
+        header h1 {
             margin: 0;
             font-size: 1.5rem;
-            font-weight: 700;
         }
-        .logo {
-            max-width: 150px;
+        header img {
+            height: 50px;
         }
         .content {
             padding: 20px;
@@ -39,102 +38,87 @@
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
             gap: 10px;
+            margin-bottom: 20px;
+        }
+        .photo-grid figure {
+            margin: 0;
         }
         .photo-grid img {
             width: 100%;
             height: auto;
             border-radius: 5px;
         }
-        .photo-grid figcaption {
-            text-align: center;
-            font-size: 0.9rem;
-            margin-top: 5px;
+        .details, .findings {
+            margin-bottom: 20px;
         }
-        .footer {
+        footer {
             background-color: #f8f9fa;
             padding: 10px;
             text-align: center;
-            font-size: 0.8rem;
             border-top: 2px solid #e9ecef;
+        }
+        .page-number {
+            text-align: right;
+            padding: 10px;
+            font-size: 0.8rem;
+            color: #666;
         }
     </style>
 </head>
 <body>
-    <header class="header">
+    <header>
         <h1>V/Line – Completion Report</h1>
-        <img src="https://tmc-static-assets.vercel.app/logo.png" alt="TMC Logo" class="logo">
+        <img src="https://tmc-static-assets.vercel.app/logo.png" alt="TMC Logo">
     </header>
-    <main class="content">
-        <section class="summary">
-            <h2>Project Summary</h2>
-            <p>The project aimed to assess the condition of the site before, during, and after the intervention, ensuring all phases were documented for comprehensive analysis.</p>
-        </section>
-        <section class="photo-grid">
+    <div class="content">
+        <div class="summary">
+            <h2>Summary</h2>
+            <p>Access track maintenance works were completed between Donnybrook and Wandong, including vegetation clearance, tree trimming near low voltage conductors, and mulching under powerlines. All areas outside significant vegetation zones were cleared as specified.</p>
+        </div>
+        <div class="photo-grid">
             <figure>
-                <img src="https://tmc-static-assets.vercel.app/6d1eaa5d-9bbd-4136-81f6-e17e075415e8.jpg" alt="After. Difficult Access area Down from Merry Creek">
-                <figcaption>After. Difficult Access area Down from Merry Creek</figcaption>
-            </figure>
-            <figure>
-                <img src="https://tmc-static-assets.vercel.app/4e5d00b2-fede-417f-b4cb-975ad7874bc2.jpg" alt="After Lokking Upwards on Down Side toward Merri Creek">
-                <figcaption>After Looking Upwards on Down Side toward Merri Creek</figcaption>
-            </figure>
-            <figure>
-                <img src="https://tmc-static-assets.vercel.app/0c6db23d-bd68-4dfd-a1c9-8f4dea5aec93.jpg" alt="After. Looking Upwards from Donnybrook Rd Crossing">
-                <figcaption>After. Looking Upwards from Donnybrook Rd Crossing</figcaption>
-            </figure>
-            <figure>
-                <img src="https://tmc-static-assets.vercel.app/a1176ee9-683d-4055-ba1a-e9ae3b1f38e7.jpg" alt="Fulcrum Photo a1176ee9-683d-4055-ba1a-e9ae3b1f38e7">
-                <figcaption>Fulcrum Photo a1176ee9-683d-4055-ba1a-e9ae3b1f38e7</figcaption>
-            </figure>
-            <figure>
-                <img src="https://tmc-static-assets.vercel.app/8f05b72a-354c-42f2-984b-0e20612ede1d.jpg" alt="Fulcrum Photo 8f05b72a-354c-42f2-984b-0e20612ede1d">
-                <figcaption>Fulcrum Photo 8f05b72a-354c-42f2-984b-0e20612ede1d</figcaption>
-            </figure>
-            <figure>
-                <img src="https://tmc-static-assets.vercel.app/fbf981cc-4f15-4e33-8b7b-0b3e2c82cdbc.jpg" alt="Fulcrum Photo fbf981cc-4f15-4e33-8b7b-0b3e2c82cdbc">
-                <figcaption>Fulcrum Photo fbf981cc-4f15-4e33-8b7b-0b3e2c82cdbc</figcaption>
-            </figure>
-            <figure>
-                <img src="https://tmc-static-assets.vercel.app/9a152035-36ac-473e-a79c-d0dace168143.jpg" alt="Fulcrum Photo 9a152035-36ac-473e-a79c-d0dace168143">
-                <figcaption>Fulcrum Photo 9a152035-36ac-473e-a79c-d0dace168143</figcaption>
-            </figure>
-            <figure>
-                <img src="https://tmc-static-assets.vercel.app/4a355448-2a99-49b4-a51c-4f88b8bb61c2.jpg" alt="Fulcrum Photo 4a355448-2a99-49b4-a51c-4f88b8bb61c2">
-                <figcaption>Fulcrum Photo 4a355448-2a99-49b4-a51c-4f88b8bb61c2</figcaption>
-            </figure>
-            <figure>
-                <img src="https://tmc-static-assets.vercel.app/292dd42a-dd8f-4182-a299-75029f951758.jpg" alt="During Works from inside Kubota SVL with FAE Forestry Mulcher">
+                <img src="https://api.fulcrumapp.com/api/v2/photos/292dd42a-dd8f-4182-a299-75029f951758" alt="During Works from inside Kubota SVL with FAE Forestry Mulcher">
                 <figcaption>During Works from inside Kubota SVL with FAE Forestry Mulcher</figcaption>
             </figure>
             <figure>
-                <img src="https://tmc-static-assets.vercel.app/57ba2eba-70f5-4605-8db4-63bbe0b61df4.jpg" alt="Fulcrum Photo 57ba2eba-70f5-4605-8db4-63bbe0b61df4">
-                <figcaption>Fulcrum Photo 57ba2eba-70f5-4605-8db4-63bbe0b61df4</figcaption>
+                <img src="https://api.fulcrumapp.com/api/v2/photos/6d1eaa5d-9bbd-4136-81f6-e17e075415e8" alt="After. Difficult Access area Down from Merry Creek">
+                <figcaption>After. Difficult Access area Down from Merry Creek</figcaption>
             </figure>
             <figure>
-                <img src="https://tmc-static-assets.vercel.app/9f09e255-c1fa-4d43-8a46-2eebb8967624.jpg" alt="Damage to FAE Mulcher">
-                <figcaption>Damage to FAE Mulcher</figcaption>
+                <img src="https://api.fulcrumapp.com/api/v2/photos/4e5d00b2-fede-417f-b4cb-975ad7874bc2" alt="After Lokking Upwards on Down Side toward Merri Creek">
+                <figcaption>After Lokking Upwards on Down Side toward Merri Creek</figcaption>
             </figure>
             <figure>
-                <img src="https://tmc-static-assets.vercel.app/d18b3ec6-4ac3-4404-8628-63669d017e98.jpg" alt="Fulcrum Photo d18b3ec6-4ac3-4404-8628-63669d017e98">
-                <figcaption>Fulcrum Photo d18b3ec6-4ac3-4404-8628-63669d017e98</figcaption>
+                <img src="https://api.fulcrumapp.com/api/v2/photos/0c6db23d-bd68-4dfd-a1c9-8f4dea5aec93" alt="After. Looking Upwards from Donnybrook Rd Crossing">
+                <figcaption>After. Looking Upwards from Donnybrook Rd Crossing</figcaption>
             </figure>
-            <figure>
-                <img src="https://tmc-static-assets.vercel.app/1e354e50-03e6-4535-8367-f49c9ecae691.jpg" alt="Fulcrum Photo 1e354e50-03e6-4535-8367-f49c9ecae691">
-                <figcaption>Fulcrum Photo 1e354e50-03e6-4535-8367-f49c9ecae691</figcaption>
-            </figure>
-            <figure>
-                <img src="https://tmc-static-assets.vercel.app/653485c8-6541-4aca-b9ea-1bc2edd75259.jpg" alt="Fulcrum Photo 653485c8-6541-4aca-b9ea-1bc2edd75259">
-                <figcaption>Fulcrum Photo 653485c8-6541-4aca-b9ea-1bc2edd75259</figcaption>
-            </figure>
-            <figure>
-                <img src="https://tmc-static-assets.vercel.app/b3949c21-7eb9-4741-835b-948c0e3b8a25.jpg" alt="Fulcrum Photo b3949c21-7eb9-4741-835b-948c0e3b8a25">
-                <figcaption>Fulcrum Photo b3949c21-7eb9-4741-835b-948c0e3b8a25</figcaption>
-            </figure>
-        </section>
-    </main>
-    <footer class="footer">
+        </div>
+        <div class="details">
+            <h2>Details</h2>
+            <p><strong>Location:</strong> Donnybrook, VIC, AU</p>
+            <p><strong>Status:</strong> Completed</p>
+            <p><strong>Project Name:</strong> 2587 - V/Line 37.662-38.200 Donovans Lane DBKWDG Access Track Maintenance Equipment</p>
+            <p><strong>External Job ID:</strong> 2587</p>
+            <p><strong>Start Date:</strong> 2025-05-07</p>
+            <p><strong>End Date:</strong> 2025-06-30</p>
+        </div>
+        <div class="findings">
+            <h2>Findings</h2>
+            <ul>
+                <li>Vegetation was cleared from poles, powerlines, and easement areas.</li>
+                <li>Tree trimming was performed to maintain safe distances from low voltage conductors.</li>
+                <li>Multiple machines, including excavators and forestry mulchers, were used to address dense vegetation.</li>
+                <li>All Gorse, Blackberry, and English Broom outside significant vegetation zones were mulched to ground level.</li>
+                <li>Machinery damage caused delays, but all works were completed as specified.</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
         <p>Generated by TMC Enviro AI System</p>
-        <p>Contact: info@tmcenvironmental.com | Phone: (123) 456-7890</p>
+        <p>Contact: info@tmcenvironmental.com | +61 3 1234 5678</p>
     </footer>
+    <div class="page-number">
+        Page 1 of 1
+    </div>
 </body>
 </html>
