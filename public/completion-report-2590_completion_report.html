@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +22,7 @@
     }
     header h1 {
       margin: 0;
-      font-size: 24px;
+      font-size: 1.5em;
     }
     header img {
       height: 50px;
@@ -39,7 +38,7 @@
     }
     .photo-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 10px;
     }
     .photo-grid figure {
@@ -54,8 +53,8 @@
     }
     .photo-grid figcaption {
       text-align: center;
-      font-size: 14px;
-      margin-top: 5px;
+      font-size: 0.9em;
+      color: #555;
     }
     footer {
       background-color: #004080;
@@ -67,8 +66,24 @@
       bottom: 0;
     }
     footer a {
-      color: white;
+      color: #ec6608;
       text-decoration: none;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #004080;
+      color: white;
     }
   </style>
 </head>
@@ -78,51 +93,69 @@
     <img src="https://tmc-static-assets.vercel.app/tmc-logo.png" alt="TMC Logo">
   </header>
   <div class="content">
-    <section class="highlight-box">
-      <h2>Summary</h2>
+    <div class="highlight-box">
       <p>Vegetation and access track maintenance was completed between 55.500 and 58.630 km, focusing on mulching woody weeds and clearing under powerlines. The works improved access for ARTC maintenance and future slashing, with no incidents reported.</p>
-    </section>
-    <section>
-      <h2>Project Details</h2>
-      <ul>
-        <li><strong>Section Completed:</strong> Section Completed where crews used 5t Excavator with Seppi Mulcher, Mechainical Grab. Also Kubota SVL95 Positrack with new Seppi Forestry Mulcher. Clearead all Woody Weeds from Rail to fence. Generated access to the ARTC Pole lines for ARTC to maintain as required. Approximatly 60% of this section can be maintained with Conventional Tractor slasher combinations ongoing. remaining area needs to be programmed with limited access equipment like positracks and excavators with mulching equipment. 5 full days to complete the ground vegetation clearing in this section. No problems or Incidents reported.</li>
-        <li><strong>Scope:</strong> This part. 58.6kp to Hume Freeway. Clear corridor for slashing where possible. Clear all poles and under powerlines. Access for ARTC and to clear trees required.</li>
-        <li><strong>Address:</strong> 35 Sir Leo Curtis Drive, Wandong, Victoria 3758</li>
-        <li><strong>Photos:</strong> 13 photos attached</li>
-        <li><strong>Videos:</strong> 3 videos attached</li>
-        <li><strong>Date Completed:</strong> 2025-06-18</li>
-        <li><strong>Status:</strong> Completed</li>
-      </ul>
-    </section>
-    <section>
-      <h2>Findings & Recommendations</h2>
-      <ul>
-        <li>Vegetation and woody weeds were cleared from rail to fence using specialised mulching equipment.</li>
-        <li>Access to ARTC pole lines was established for ongoing maintenance.</li>
-        <li>Approximately 60% of the section can be maintained with conventional tractor slasher combinations.</li>
-        <li>Remaining areas require limited access equipment for future maintenance.</li>
-        <li>No problems or incidents were reported during the works.</li>
-        <li>Hazard identified: ARTC signal cables below minimum height.</li>
-      </ul>
-    </section>
-    <section>
-      <h2>Photo Documentation</h2>
-      <div class="photo-grid">
-        <figure><img src="https://api.fulcrumapp.com/api/v2/photos/d96bd6fc-3e90-4266-a632-fa05fcb3f854" alt="Before Mid Section" /><figcaption>Before Mid Section</figcaption></figure>
-        <figure><img src="https://api.fulcrumapp.com/api/v2/photos/c63acf61-2091-4207-83dc-9a144bade224" alt="Before Mid Section 2" /><figcaption>Before Mid Section 2</figcaption></figure>
-        <figure><img src="https://api.fulcrumapp.com/api/v2/photos/824e67d1-f070-49aa-a345-97af280e10c3" alt="Before Creek to Hume Fwy" /><figcaption>Before Creek to Hume Fwy</figcaption></figure>
-        <figure><img src="https://api.fulcrumapp.com/api/v2/photos/2422c763-921f-4af1-a3a6-e605695c10e9" alt="During mid Section" /><figcaption>During mid Section</figcaption></figure>
-        <figure><img src="https://api.fulcrumapp.com/api/v2/photos/777fa763-5974-426d-aacd-9a4c63e13aab" alt="During Mid Section 2" /><figcaption>During Mid Section 2</figcaption></figure>
-        <figure><img src="https://api.fulcrumapp.com/api/v2/photos/d17f30dc-aaf8-4536-860c-eb8b56125a0f" alt="After Mid Section" /><figcaption>After Mid Section</figcaption></figure>
-        <figure><img src="https://api.fulcrumapp.com/api/v2/photos/76176644-2a1a-4776-b61d-9ea9e3893e23" alt="After Mid Section 2" /><figcaption>After Mid Section 2</figcaption></figure>
-        <figure><img src="https://api.fulcrumapp.com/api/v2/photos/ee420281-99bc-4e4f-b65c-2c220da40ed8" alt="After Mid Section 3" /><figcaption>After Mid Section 3</figcaption></figure>
-        <figure><img src="https://api.fulcrumapp.com/api/v2/photos/83c5bb62-65f9-4df6-9af7-ec344cae17bc" alt="Hazard, ARTC Signal Cables below Minimum Height" /><figcaption>Hazard, ARTC Signal Cables below Minimum Height</figcaption></figure>
-        <figure><img src="https://api.fulcrumapp.com/api/v2/photos/de0152e6-de4c-4e57-80ad-378c87f223f4" alt="After Mid Section 4" /><figcaption>After Mid Section 4</figcaption></figure>
-        <figure><img src="https://api.fulcrumapp.com/api/v2/photos/562555c9-62ae-45b5-a653-4588907c75b5" alt="After 5" /><figcaption>After 5</figcaption></figure>
-        <figure><img src="https://api.fulcrumapp.com/api/v2/photos/d018e5ce-a451-4b46-8022-f5ac2c9c48c3" alt="After 6" /><figcaption>After 6</figcaption></figure>
-        <figure><img src="https://api.fulcrumapp.com/api/v2/photos/44313020-9939-4715-8ae5-52be59e89444" alt="After Creek to Hume Fwy" /><figcaption>After Creek to Hume Fwy</figcaption></figure>
-      </div>
-    </section>
+    </div>
+    <h2>Project Details</h2>
+    <table>
+      <tr>
+        <th>Project</th>
+        <td>2590 - V/Line 55.500 (Epping-Kilmore Rd crossing) - 58.630, Hume Freeway to DBKWDG Access Tra</td>
+      </tr>
+      <tr>
+        <th>PO/LOE</th>
+        <td>194664</td>
+      </tr>
+      <tr>
+        <th>Status</th>
+        <td>Completed</td>
+      </tr>
+      <tr>
+        <th>Date Completed</th>
+        <td>2025-06-26</td>
+      </tr>
+      <tr>
+        <th>Location</th>
+        <td>Wandong, Victoria</td>
+      </tr>
+      <tr>
+        <th>Address</th>
+        <td>35 Sir Leo Curtis Drive, Wandong, Victoria 3758</td>
+      </tr>
+      <tr>
+        <th>Photos</th>
+        <td>13 photos attached</td>
+      </tr>
+      <tr>
+        <th>Videos</th>
+        <td>3 videos attached</td>
+      </tr>
+    </table>
+    <h2>Findings & Recommendations</h2>
+    <ul>
+      <li>Vegetation and woody weeds were cleared from rail to fence using specialised mulching equipment.</li>
+      <li>Access to ARTC pole lines was established for ongoing maintenance.</li>
+      <li>Approximately 60% of the section can be maintained with conventional tractor slasher combinations.</li>
+      <li>Remaining areas require limited access equipment for future maintenance.</li>
+      <li>No problems or incidents were reported during the works.</li>
+      <li>Hazard identified: ARTC signal cables below minimum height.</li>
+    </ul>
+    <h2>Photo Documentation</h2>
+    <div class="photo-grid">
+      <figure><img src="https://api.fulcrumapp.com/api/v2/photos/d96bd6fc-3e90-4266-a632-fa05fcb3f854" alt="Before Mid Section" /><figcaption>Before Mid Section</figcaption></figure>
+      <figure><img src="https://api.fulcrumapp.com/api/v2/photos/c63acf61-2091-4207-83dc-9a144bade224" alt="Before Mid Section 2" /><figcaption>Before Mid Section 2</figcaption></figure>
+      <figure><img src="https://api.fulcrumapp.com/api/v2/photos/824e67d1-f070-49aa-a345-97af280e10c3" alt="Before Creek to Hume Fwy" /><figcaption>Before Creek to Hume Fwy</figcaption></figure>
+      <figure><img src="https://api.fulcrumapp.com/api/v2/photos/2422c763-921f-4af1-a3a6-e605695c10e9" alt="During mid Section" /><figcaption>During mid Section</figcaption></figure>
+      <figure><img src="https://api.fulcrumapp.com/api/v2/photos/777fa763-5974-426d-aacd-9a4c63e13aab" alt="During Mid Section 2" /><figcaption>During Mid Section 2</figcaption></figure>
+      <figure><img src="https://api.fulcrumapp.com/api/v2/photos/d17f30dc-aaf8-4536-860c-eb8b56125a0f" alt="After Mid Section" /><figcaption>After Mid Section</figcaption></figure>
+      <figure><img src="https://api.fulcrumapp.com/api/v2/photos/76176644-2a1a-4776-b61d-9ea9e3893e23" alt="After Mid Section 2" /><figcaption>After Mid Section 2</figcaption></figure>
+      <figure><img src="https://api.fulcrumapp.com/api/v2/photos/ee420281-99bc-4e4f-b65c-2c220da40ed8" alt="After Mid Section 3" /><figcaption>After Mid Section 3</figcaption></figure>
+      <figure><img src="https://api.fulcrumapp.com/api/v2/photos/83c5bb62-65f9-4df6-9af7-ec344cae17bc" alt="Hazard, ARTC Signal Cables below Minimum Height" /><figcaption>Hazard, ARTC Signal Cables below Minimum Height</figcaption></figure>
+      <figure><img src="https://api.fulcrumapp.com/api/v2/photos/de0152e6-de4c-4e57-80ad-378c87f223f4" alt="After Mid Section 4" /><figcaption>After Mid Section 4</figcaption></figure>
+      <figure><img src="https://api.fulcrumapp.com/api/v2/photos/562555c9-62ae-45b5-a653-4588907c75b5" alt="After 5" /><figcaption>After 5</figcaption></figure>
+      <figure><img src="https://api.fulcrumapp.com/api/v2/photos/d018e5ce-a451-4b46-8022-f5ac2c9c48c3" alt="After 6" /><figcaption>After 6</figcaption></figure>
+      <figure><img src="https://api.fulcrumapp.com/api/v2/photos/44313020-9939-4715-8ae5-52be59e89444" alt="After Creek to Hume Fwy" /><figcaption>After Creek to Hume Fwy</figcaption></figure>
+    </div>
   </div>
   <footer>
     <p>Generated by <strong>Systems @ TMC Enviro</strong></p>
