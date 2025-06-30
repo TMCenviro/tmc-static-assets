@@ -1,108 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>{{project_name}} – Completion Report</title>
-
   <style>
-    /* ───── COLOUR TOKENS ───── */
-    :root{
-      --tmc-blue:#273A60;      /* brand navy */
-      --tmc-orange:#ec6608;    /* Husqvarna orange */
-      --panel-bg:#ffffff;
-      --page-bg:#f4f4f4;
+    :root {
+      --tmc-blue: #273A60;
+      --tmc-orange: #ec6608;
+      --page-bg: #f4f4f4;
+      --panel-bg: #ffffff;
     }
-
-    /* ───── BASE ───── */
-    *{box-sizing:border-box;}
-    body{
-      margin:0;
-      font-family:'Montserrat',sans-serif;
-      background:var(--page-bg);
-      color:#333;
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: var(--page-bg);
+      margin: 0;
+      padding: 0;
+      color: #333;
     }
-
-    /* ───── HEADER ───── */
-    header{
-      background:var(--tmc-blue);
-      color:#fff;
-      padding:20px;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      border-bottom:4px solid var(--tmc-orange);
+    header {
+      background: var(--tmc-blue);
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 4px solid var(--tmc-orange);
     }
-    header h1{margin:0;font-size:1.4rem;font-weight:600;}
-    header img{height:52px;}
-
-    /* ───── LAYOUT ───── */
-    main{max-width:780px;margin:0 auto;padding:24px;}
-
-    /* ───── INFO PANEL ───── */
-    .info{
-      background:var(--tmc-orange);
-      color:#fff;
-      border-radius:6px;
-      padding:20px;
-      margin-bottom:28px;
-      font-weight:500;
+    header h1 { margin: 0; font-size: 1.5rem; }
+    header img { height: 52px; }
+    main {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 24px;
     }
-    .info p{margin:4px 0;}
-
-    /* ───── SECTIONS ───── */
-    section{
-      background:var(--panel-bg);
-      border-radius:6px;
-      padding:20px;
-      margin-bottom:28px;
-      box-shadow:0 0 8px rgba(0,0,0,.08);
+    .info {
+      background: var(--tmc-orange);
+      color: #fff;
+      border-radius: 6px;
+      padding: 20px;
+      margin-bottom: 28px;
+      font-weight: 500;
     }
-    section h2{
-      margin-top:0;
-      color:var(--tmc-blue);
-      font-size:1.25rem;
+    .info p { margin: 4px 0; }
+    section {
+      background: var(--panel-bg);
+      padding: 20px;
+      border-radius: 6px;
+      margin-bottom: 28px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.08);
     }
-
-    /* ───── PHOTO GRID ───── */
-    .photo-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-      gap:12px;
+    section h2 {
+      color: var(--tmc-blue);
+      margin-top: 0;
+      font-size: 1.25rem;
     }
-    .photo-grid img{
-      width:100%;
-      border-radius:4px;
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
     }
-
-    /* ───── FOOTER ───── */
-    footer{
-      background:var(--tmc-blue);
-      color:#fff;
-      text-align:center;
-      padding:12px;
-      border-top:4px solid var(--tmc-orange);
+    .photo-grid img {
+      width: 100%;
+      border-radius: 4px;
     }
-    footer a{color:var(--tmc-orange);text-decoration:none;}
-
-    /* ───── PRINT (PDF) ───── */
-    @page{
-      margin:20mm 15mm 28mm;
-      @bottom-center{content:element(page-footer);}
+    footer {
+      background: var(--tmc-blue);
+      color: white;
+      text-align: center;
+      padding: 12px;
+      border-top: 4px solid var(--tmc-orange);
     }
-    footer{position:running(page-footer);}
+    footer a {
+      color: var(--tmc-orange);
+      text-decoration: none;
+    }
+    @page {
+      margin: 20mm 15mm 28mm;
+      @bottom-center { content: element(page-footer); }
+    }
+    footer { position: running(page-footer); }
   </style>
 </head>
 
 <body>
-  <!-- HEADER -->
   <header>
     <h1>V/Line – Completion Report</h1>
-    <img src="https://tmc-static-assets.vercel.app/tmc-logo.png" alt="TMC Logo">
+    <img src="https://tmc-static-assets.vercel.app/tmc-logo.png" alt="TMC Logo" />
   </header>
 
   <main>
-    <!-- INFO PANEL -->
     <div class="info">
       <p><strong>Project:</strong> {{project_name}}</p>
       <p><strong>Customer:</strong> {{customer}}</p>
@@ -113,40 +100,29 @@
       {{details_block}}
     </div>
 
-    <!-- SUMMARY -->
     <section>
       <h2>Summary</h2>
       <p>{{summary_text}}</p>
     </section>
 
-    <!-- FINDINGS -->
     <section>
       <h2>Key Findings</h2>
       {{findings_block}}
     </section>
 
-    <!-- MEDIA -->
     <section>
       <h2>Media</h2>
-
       <h3>Before</h3>
-      <div class="photo-grid">
-        {{embed_codes_before}}
-      </div>
+      <div class="photo-grid">{{embed_codes_before}}</div>
 
       <h3>During</h3>
-      <div class="photo-grid">
-        {{embed_codes_during}}
-      </div>
+      <div class="photo-grid">{{embed_codes_during}}</div>
 
       <h3>After</h3>
-      <div class="photo-grid">
-        {{embed_codes_after}}
-      </div>
+      <div class="photo-grid">{{embed_codes_after}}</div>
     </section>
   </main>
 
-  <!-- FOOTER -->
   <footer>
     <p>Generated by <strong>Systems @ TMC enviro</strong></p>
     <p><a href="https://www.tmcenviro.com.au" target="_blank">www.tmcenviro.com.au</a></p>
