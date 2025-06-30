@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>$\1</title>
+  <title>$title</title>
   <style>
     /* ----------  COLOUR TOKENS  ---------- */
     :root {
@@ -105,25 +105,25 @@
 
     <!-- Project Info & Details Block -->
     <div class="project-info">
-      <p><strong>Project:</strong> $\1</p>
-      <p><strong>Customer:</strong> $\1</p>
-      <p><strong>PO/LOE:</strong> $\1</p>
-      <p><strong>Location:</strong> $\1 (KP $\1 – $\1)</p>
-      <p><strong>Status:</strong> $\1</p>
-      <p><strong>Date Completed:</strong> $\1</p>
-      $\1
+      <p><strong>Project:</strong> 2587 - V/Line 37.662-38.200 Donovans Lane DBKWDG Access Track Maintenance Equipment</p>
+      <p><strong>Customer:</strong> $customer</p>
+      <p><strong>PO/LOE:</strong> $po_noe</p>
+      <p><strong>Location:</strong> $location (KP $kp_start – $kp_end)</p>
+      <p><strong>Status:</strong> $status</p>
+      <p><strong>Date Completed:</strong> $date_completed</p>
+      $details_block
     </div>
 
     <!-- Summary -->
     <section>
       <h2>Summary</h2>
-      <p>$\1</p>
+      <p>$summary_text</p>
     </section>
 
     <!-- Findings & Recommendations -->
     <section>
       <h2>Key Findings</h2>
-      $\1
+      $findings_block
     </section>
 
     <!-- Media -->
@@ -133,19 +133,19 @@
       <!-- Before -->
       <h3>Before</h3>
       <div class="photo-grid">
-        $\1
+        $embed_codes_before
       </div>
 
       <!-- During -->
       <h3>During</h3>
       <div class="photo-grid">
-        $\1
+        $embed_codes_during
       </div>
 
       <!-- After -->
       <h3>After</h3>
       <div class="photo-grid">
-        $\1
+        $embed_codes_after
       </div>
     </section>
   </div>
