@@ -13,8 +13,8 @@
             background-color: #f4f4f4;
         }
         header {
-            background-color: #004080;
-            color: white;
+            background: #273A60;
+            color: #fff;
             padding: 20px;
             display: flex;
             justify-content: space-between;
@@ -22,75 +22,60 @@
         }
         header h1 {
             margin: 0;
-            font-size: 1.5em;
         }
-        header img {
-            height: 50px;
-        }
-        .content {
-            padding: 20px;
-        }
-        .highlight-box {
-            background-color: #ec6608;
-            color: white;
+        footer {
+            background: #273A60;
+            color: #fff;
+            text-align: center;
             padding: 10px;
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+        }
+        h2 {
+            color: #004080;
+        }
+        .summary, .details, .findings, .photo-grid {
             margin-bottom: 20px;
+        }
+        .details ul, .findings ul {
+            list-style: none;
+            padding: 0;
+        }
+        .details li, .findings li {
+            margin-bottom: 10px;
         }
         .photo-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 10px;
-            margin-bottom: 20px;
         }
         .photo-grid img {
-            width: 100%;
+            max-width: 100%;
             height: auto;
-            border-radius: 5px;
+            border: 2px solid #ec6608;
         }
-        .details, .findings {
-            background-color: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .details h2, .findings h2 {
-            color: #004080;
-        }
-        footer {
-            background-color: #004080;
-            color: white;
+        .photo-grid figcaption {
             text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-        footer a {
-            color: #ec6608;
-            text-decoration: none;
+            font-size: 0.9em;
+            color: #555;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>V/Line – Completion Report</h1>
-        <img src="https://tmc-static-assets.vercel.app/tmc-logo.png" alt="TMC Logo">
+        <img src="https://tmc-static-assets.vercel.app/tmc-logo.png" alt="TMC Logo" style="height:50px;">
     </header>
-    <div class="content">
-        <div class="highlight-box">
-            <h2>Access Track Maintenance Donnybrook - Wandong</h2>
-            <p><strong>Project:</strong> 2587 - V/Line 37.662-38.200 Donovans Lane DBKWDG Access Track Maintenance Equipment</p>
-            <p><strong>PO/LOE:</strong> 194139</p>
-            <p><strong>Status:</strong> Completed</p>
-            <p><strong>Date Completed:</strong> 2025-06-30</p>
-            <p><strong>Location:</strong> Beveridge, VIC</p>
-        </div>
-        <div class="summary">
+    <div class="container">
+        <section class="summary">
             <h2>Summary</h2>
             <p>The project aimed to reinstate access for fuel tankers to the generator powering signals by mulching vegetation and trimming trees under ARTC pole lines at Donovans Lane, Beveridge. The work was completed over two days using forestry mulchers, EWP, and woodchippers, ensuring improved access and compliance with clearance requirements.</p>
-        </div>
-        <div class="details">
+        </section>
+        <section class="details">
             <h2>Details</h2>
             <ul>
                 <li><strong>Vegetation Mulched:</strong> Yes</li>
@@ -99,8 +84,8 @@
                 <li><strong>Address:</strong> 268–300 Donovans La, Beveridge, VIC 3753, AU</li>
                 <li><strong>Date of Works:</strong> 2025-06-07</li>
             </ul>
-        </div>
-        <div class="findings">
+        </section>
+        <section class="findings">
             <h2>Key Findings</h2>
             <ul>
                 <li>Vegetation under ARTC pole lines was mulched to improve access.</li>
@@ -109,27 +94,33 @@
                 <li>Clearance requirements for tanker access were addressed.</li>
                 <li>Project status marked as completed.</li>
             </ul>
-        </div>
-        <div class="photo-grid">
+        </section>
+        <section class="photo-grid">
             <h2>Photo Documentation</h2>
-            <div>
-                <h3>Before</h3>
-                <img src="https://tmc-static-assets.vercel.app/a117491a-6b18-491b-819b-c639419fad89.jpg" alt="Before 1" style="max-width:100%; height:auto;" />
-                <img src="https://tmc-static-assets.vercel.app/312d9b6d-7e54-449c-83bd-bfad13c2e579.jpg" alt="Before 2. Tree Trimming" style="max-width:100%; height:auto;" />
-            </div>
-            <div>
-                <h3>During</h3>
-                <img src="https://tmc-static-assets.vercel.app/5e822ce4-5497-4141-ab67-886ef6d7fc14.jpg" alt="During 1. looking at generator." style="max-width:100%; height:auto;" />
-            </div>
-            <div>
-                <h3>After</h3>
-                <img src="https://tmc-static-assets.vercel.app/cf21d91b-b936-4e8b-9e8e-a9e1b445e6a1.jpg" alt="After 1. Cleared Mulching Completed" style="max-width:100%; height:auto;" />
-                <img src="https://tmc-static-assets.vercel.app/ee686d5c-d5ea-4361-9d4a-c83ee66fc9f5.jpg" alt="After 2. Tree Trimming" style="max-width:100%; height:auto;" />
-            </div>
-        </div>
+            <figure>
+                <img src="https://tmc-static-assets.vercel.app/a117491a-6b18-491b-819b-c639419fad89.jpg" alt="Before 1">
+                <figcaption>Before 1</figcaption>
+            </figure>
+            <figure>
+                <img src="https://tmc-static-assets.vercel.app/312d9b6d-7e54-449c-83bd-bfad13c2e579.jpg" alt="Before 2. Tree Trimming">
+                <figcaption>Before 2. Tree Trimming</figcaption>
+            </figure>
+            <figure>
+                <img src="https://tmc-static-assets.vercel.app/5e822ce4-5497-4141-ab67-886ef6d7fc14.jpg" alt="During 1. looking at generator.">
+                <figcaption>During 1. looking at generator.</figcaption>
+            </figure>
+            <figure>
+                <img src="https://tmc-static-assets.vercel.app/cf21d91b-b936-4e8b-9e8e-a9e1b445e6a1.jpg" alt="After 1. Cleared Mulching Completed">
+                <figcaption>After 1. Cleared Mulching Completed</figcaption>
+            </figure>
+            <figure>
+                <img src="https://tmc-static-assets.vercel.app/ee686d5c-d5ea-4361-9d4a-c83ee66fc9f5.jpg" alt="After 2. Tree Trimming">
+                <figcaption>After 2. Tree Trimming</figcaption>
+            </figure>
+        </section>
     </div>
     <footer>
-        <p>Generated by <strong>Systems @ TMC Enviro</strong></p>
+        <p>Generated by <strong>Systems @ TMC enviro</strong></p>
         <p><a href="https://www.tmcenviro.com.au" target="_blank">www.tmcenviro.com.au</a></p>
         <p>Email: <a href="mailto:systems@tmcenviro.com.au">systems@tmcenviro.com.au</a> | Phone: <a href="tel:+61458922033">+61 458 922 033</a></p>
     </footer>
