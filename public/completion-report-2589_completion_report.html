@@ -1,175 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Access Track Maintenance Donnybrook - Wandong Completion Report</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>2589 - V/Line 55.500 - 58.630 DBKWDG Access Track Maintenance Equipment – Completion Report</title>
   <style>
-    /* ----------  COLOUR TOKENS  ---------- */
     :root {
-      --tmc-blue: #273A60;   /* Husqvarna dark blue */
-      --tmc-orange: #ec6608; /* TMC accent orange  */
+      --tmc-blue: #273A60;
+      --tmc-orange: #ec6608;
+      --page-bg: #f4f4f4;
+      --panel-bg: #ffffff;
     }
-
-    /* ----------  BASE  ---------- */
     body {
       font-family: 'Montserrat', sans-serif;
+      background: var(--page-bg);
       margin: 0;
       padding: 0;
       color: #333;
-      background: #f4f4f4;
     }
-
-    /* ----------  HEADER  ---------- */
     header {
       background: var(--tmc-blue);
-      color: #fff;
+      color: white;
       padding: 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 4px solid var(--tmc-orange); /* thin orange line */
+      border-bottom: 4px solid var(--tmc-orange);
     }
-    header h1 { margin: 0; font-size: 1.5em; }
-    header img { height: 50px; }
-
-    /* ----------  LAYOUT  ---------- */
-    .content { max-width: 750px; margin: 0 auto; padding: 20px; }
-
-    /* ----------  PROJECT INFO BLOCK  ---------- */
-    .project-info {
+    header h1 { margin: 0; font-size: 1.5rem; }
+    header img { height: 52px; }
+    main {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    .info {
       background: var(--tmc-orange);
       color: #fff;
-      padding: 20px;
       border-radius: 6px;
-      margin-bottom: 24px;
+      padding: 20px;
+      margin-bottom: 28px;
+      font-weight: 500;
     }
-    .project-info h2 { margin-top: 0; }
-    .project-info p { margin: 4px 0; font-weight: 500; }
-
-    /* ----------  SECTION CARDS  ---------- */
+    .info p { margin: 4px 0; }
     section {
-      background: #fff;
+      background: var(--panel-bg);
       padding: 20px;
       border-radius: 6px;
+      margin-bottom: 28px;
       box-shadow: 0 0 8px rgba(0,0,0,0.08);
-      margin-bottom: 24px;
     }
-    section h2 { color: var(--tmc-blue); margin-top: 0; }
-    section h3 { color: var(--tmc-blue); margin: 16px 0 8px; font-size: 1.05em; }
-
-    /* ----------  PHOTO GRID  ---------- */
+    section h2 {
+      color: var(--tmc-blue);
+      margin-top: 0;
+      font-size: 1.25rem;
+    }
     .photo-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       gap: 12px;
     }
-    .photo-grid figure { margin: 0; }
     .photo-grid img {
       width: 100%;
-      height: auto;
       border-radius: 4px;
     }
-    .photo-grid figcaption {
-      font-size: 0.8em;
-      text-align: center;
-      margin-top: 4px;
-    }
-
-    /* ----------  FOOTER  ---------- */
     footer {
       background: var(--tmc-blue);
-      color: #fff;
+      color: white;
       text-align: center;
-      padding: 10px;
-      border-top: 4px solid var(--tmc-orange); /* thin orange line */
-      position: static;          /* flows with page */
-      position: running(page-footer);
+      padding: 12px;
+      border-top: 4px solid var(--tmc-orange);
     }
-    footer a { color: var(--tmc-orange); text-decoration: none; }
-
+    footer a {
+      color: var(--tmc-orange);
+      text-decoration: none;
+    }
     @page {
-      margin: 20mm 15mm 30mm;  /* leave room for footer */
+      margin: 20mm 15mm 28mm;
       @bottom-center { content: element(page-footer); }
     }
+    footer { position: running(page-footer); }
   </style>
 </head>
+
 <body>
-  <!-- Header -->
   <header>
     <h1>V/Line – Completion Report</h1>
-    <img src="https://tmc-static-assets.vercel.app/tmc-logo.png" alt="TMC Logo">
+    <img src="https://tmc-static-assets.vercel.app/tmc-logo.png" alt="TMC Logo" />
   </header>
 
-  <div class="content">
-
-    <!-- Project Info Block -->
-    <div class="project-info">
-      <h2>Access Track Maintenance Donnybrook - Wandong Completion Report</h2>
-      <p><strong>Client:</strong> V/Line</p>
-      <p><strong>Location:</strong> Wandong, Victoria</p>
-      <p><strong>Date Completed:</strong> 2025-06-30</p>
+  <main>
+    <div class="info">
+      <p><strong>Project:</strong> 2589 - V/Line 55.500 - 58.630 DBKWDG Access Track Maintenance Equipment</p>
+      <p><strong>Customer:</strong> V/Line</p>
+      <p><strong>PO / LOE:</strong> 194664</p>
+      <p><strong>Location:</strong> Wandong, Victoria (KP 55.500 – 58.630)</p>
+      <p><strong>Status:</strong> Completed</p>
+      <p><strong>Date Completed:</strong> 2025-07-01</p>
+      <ul><li><strong>Work Description:</strong> The mulching and vegetation removal around the pole lines have been completed, effectively mitigating fire hazards behind the Wondong Shopping Centre, between the rail line and the Easman boundary. Furthermore, we have cleared all blackberry and gorse, including areas under the pole lines and within the easement, extending from the rail street crossing to Wondong Station.</li><li><strong>Scope of Works:</strong> Clear under powerlines all areas. Create access for ARTC to poles.</li><li><strong>Address:</strong> 64 Rail Street, Wandong, Victoria, 3758, Australia</li><li><strong>Date of Works:</strong> 2025-06-07</li></ul>
     </div>
 
-    <!-- Summary -->
     <section>
       <h2>Summary</h2>
-      <p>The project aimed to improve access and reduce fire hazards by completing vegetation mulching and removal works along the access track between Epping-Kilmore Road and Wandong Station. The outcome was successful, with all blackberry and gorse cleared, particularly under and around powerlines, effectively mitigating fire hazards behind the Wandong Shopping Centre and within the easement.</p>
+      <p>Vegetation mulching and access track reinstatement were successfully completed between Epping-Kilmore Road and Wandong Station. All blackberry and gorse were effectively cleared, particularly under and around powerlines, which has improved access for ARTC and reduced fire hazards behind the Wandong Shopping Centre.</p>
     </section>
 
-    <!-- Findings & Recommendations -->
     <section>
       <h2>Key Findings</h2>
-      <ul>
-        <li>All blackberry and gorse vegetation was mulched and removed along the specified corridor.</li>
-        <li>Vegetation clearance was completed under and around powerlines to improve access.</li>
-        <li>Fire hazards behind the Wandong Shopping Centre were effectively mitigated.</li>
-        <li>Access for ARTC to power poles was created as per scope.</li>
-        <li>Works extended from the rail street crossing to Wandong Station.</li>
-      </ul>
+      <ul><li>All blackberry and gorse vegetation cleared from under and around powerlines.</li><li>Access track reinstated from Epping-Kilmore Road crossing to Wandong Station.</li><li>Fire hazards behind Wandong Shopping Centre have been mitigated.</li><li>Access for ARTC to power poles has been created.</li><li>Works included areas within the easement and between the rail line and Easman boundary.</li></ul>
     </section>
 
-    <!-- Media -->
     <section>
       <h2>Media</h2>
+      <h3>Before</h3>
+      <div class="photo-grid"></div>
 
-      <!-- During -->
       <h3>During</h3>
-      <div class="photo-grid">
-        <figure>
-          <img src="https://tmc-static-assets.vercel.app/73f2ff88-be9c-4283-a8b1-a31c9a4ebbab.jpg" alt="During Behind Wandong Shops" style="max-width:100%; height:auto;" />
-          <figcaption>During Behind Wandong Shops</figcaption>
-        </figure>
-        <figure>
-          <img src="https://tmc-static-assets.vercel.app/e1fc4653-2204-4b42-b7c2-d3309489e8c2.jpg" alt="During 2 From Kubota SVL95" style="max-width:100%; height:auto;" />
-          <figcaption>During 2 From Kubota SVL95</figcaption>
-        </figure>
-        <figure>
-          <img src="https://tmc-static-assets.vercel.app/88ee6d59-6d16-4ef8-8e96-04b83cdbb5b3.jpg" alt="During 3. Kubota 5T Excavator Tracking out" style="max-width:100%; height:auto;" />
-          <figcaption>During 3. Kubota 5T Excavator Tracking out</figcaption>
-        </figure>
-      </div>
+      <div class="photo-grid"><img src="https://tmc-static-assets.vercel.app/73f2ff88-be9c-4283-a8b1-a31c9a4ebbab.jpg" alt="During Behind Wandong Shops" style="max-width:100%; height:auto;" /><img src="https://tmc-static-assets.vercel.app/e1fc4653-2204-4b42-b7c2-d3309489e8c2.jpg" alt="During 2 From Kubota SVL95" style="max-width:100%; height:auto;" /><img src="https://tmc-static-assets.vercel.app/88ee6d59-6d16-4ef8-8e96-04b83cdbb5b3.jpg" alt="During 3. Kubota 5T Excavator Tracking out" style="max-width:100%; height:auto;" /></div>
 
-      <!-- After -->
       <h3>After</h3>
-      <div class="photo-grid">
-        <figure>
-          <img src="https://tmc-static-assets.vercel.app/d5cafb3d-f610-4f2f-b5c6-c2cf3081fc1d.jpg" alt="After 1 All Blackberry amd Gorse Mulched" style="max-width:100%; height:auto;" />
-          <figcaption>After 1 All Blackberry and Gorse Mulched</figcaption>
-        </figure>
-        <figure>
-          <img src="https://tmc-static-assets.vercel.app/0b321336-c6ec-4b83-b135-4a3245237b36.jpg" alt="After. Blackberry amd Gorse Mulched. ELC Works to do" style="max-width:100%; height:auto;" />
-          <figcaption>After. Blackberry and Gorse Mulched. ELC Works to do</figcaption>
-        </figure>
-        <figure>
-          <img src="https://tmc-static-assets.vercel.app/7ffff376-4bfc-4def-9809-7b93471772ad.jpg" alt="After 4." style="max-width:100%; height:auto;" />
-          <figcaption>After 4.</figcaption>
-        </figure>
-      </div>
+      <div class="photo-grid"><img src="https://tmc-static-assets.vercel.app/d5cafb3d-f610-4f2f-b5c6-c2cf3081fc1d.jpg" alt="After 1 All Blackberry amd Gorse Mulched" style="max-width:100%; height:auto;" /><img src="https://tmc-static-assets.vercel.app/0b321336-c6ec-4b83-b135-4a3245237b36.jpg" alt="After. Blackberry amd Gorse Mulched. ELC Works to do" style="max-width:100%; height:auto;" /><img src="https://tmc-static-assets.vercel.app/7ffff376-4bfc-4def-9809-7b93471772ad.jpg" alt="After 4." style="max-width:100%; height:auto;" /></div>
     </section>
-  </div>
+  </main>
 
-  <!-- Footer -->
   <footer>
     <p>Generated by <strong>Systems @ TMC enviro</strong></p>
     <p><a href="https://www.tmcenviro.com.au" target="_blank">www.tmcenviro.com.au</a></p>
