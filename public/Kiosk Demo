@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TMC Enviro Kiosk</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      display: flex;
+    }
+    header {
+      background-color: #273A60;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header img {
+      height: 48px;
+    }
+    .sidebar {
+      width: 280px;
+      background: #273A60;
+      color: white;
+      height: 100vh;
+      overflow-y: auto;
+      padding: 1rem;
+      position: fixed;
+    }
+    .sidebar h2 {
+      color: #ec6608;
+      font-size: 1.2rem;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar li {
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+      background: #3b4e7b;
+      border-radius: 0.5rem;
+    }
+    .main-content {
+      margin-left: 280px;
+      flex: 1;
+      padding: 2rem;
+    }
+    h1 {
+      color: #ec6608;
+    }
+    .content-box {
+      background: white;
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #273A60;
+      color: white;
+      position: fixed;
+      bottom: 0;
+      width: calc(100% - 280px);
+      margin-left: 280px;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Pending Issues</h2>
+    <ul>
+      <li>ISS-1023: Chipper blade requires replacement</li>
+      <li>ISS-1024: Site hazard signage missing at Lot 5</li>
+      <li>ISS-1025: AdBlue sensor fault - AT23</li>
+    </ul>
+    <h2>Equipment Actions</h2>
+    <ul>
+      <li>AT12 - Scheduled for service next Monday</li>
+      <li>TR45 - Awaiting new tyres</li>
+      <li>CH18 - Daily safety inspection overdue</li>
+    </ul>
+  </div>
+  <div class="main-content">
+    <header>
+      <img src="https://tmc-static-assets.vercel.app/tmc-logo.png" alt="TMC Logo">
+      <h1>TMC Enviro</h1>
+    </header>
+    <main>
+      <div class="content-box">
+        <h2>Welcome to the Kiosk Display</h2>
+        <p>This is a placeholder demo. Content can be pulled live from Fulcrum, Relevance AI, or other sources based on selected filters, scheduled updates, or voice/QR triggers.</p>
+        <p>Let's start building what you want visible here — slideshow, weather, status boards, job info, etc.</p>
+      </div>
+    </main>
+    <footer>
+      &copy; 2025 TMC Enviro – All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
