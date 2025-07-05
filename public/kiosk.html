@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TMC Enviro Kiosk</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      display: flex;
+    }
+    header {
+      background-color: #273A60;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header img {
+      height: 48px;
+    }
+    .sidebar {
+      width: 280px;
+      background: #273A60;
+      color: white;
+      height: 100vh;
+      overflow-y: auto;
+      padding: 1rem;
+      position: fixed;
+    }
+    .sidebar h2 {
+      color: #ec6608;
+      font-size: 1.2rem;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar li {
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+      background: #3b4e7b;
+      border-radius: 0.5rem;
+    }
+    .main-content {
+      margin-left: 280px;
+      flex: 1;
+      padding: 2rem;
+    }
+    h1 {
+      color: #ec6608;
+    }
+    .content-box {
+      background: white;
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      max-width: 960px;
+      margin: 0 auto 2rem;
+    }
+    .panel {
+      margin-top: 2rem;
+    }
+    .panel h3 {
+      margin-bottom: 0.5rem;
+      color: #273A60;
+    }
+    .panel ul {
+      padding-left: 1rem;
+    }
+    .panel li {
+      margin-bottom: 0.25rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #273A60;
+      color: white;
+      position: fixed;
+      bottom: 0;
+      width: calc(100% - 280px);
+      margin-left: 280px;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Pending Issues</h2>
+    <ul>
+      <li>ISS-1023: Chipper blade requires replacement</li>
+      <li>ISS-1024: Site hazard signage missing at Lot 5</li>
+      <li>ISS-1025: AdBlue sensor fault - AT23</li>
+      <li>ISS-1026: Hydraulic leak - TR12</li>
+      <li>ISS-1027: Traffic management signs incomplete</li>
+      <li>ISS-1028: CCTV upload failure - VicHub</li>
+    </ul>
+    <h2>Equipment Actions</h2>
+    <ul>
+      <li>AT12 - Scheduled for service next Monday</li>
+      <li>TR45 - Awaiting new tyres</li>
+      <li>CH18 - Daily safety inspection overdue</li>
+      <li>EX34 - Bucket tilt sensor calibration pending</li>
+      <li>WO09 - Registration sticker expired</li>
+    </ul>
+  </div>
+  <div class="main-content">
+    <header>
+      <img src="https://tmc-static-assets.vercel.app/tmc-logo.png" alt="TMC Logo">
+      <h1>TMC Enviro</h1>
+    </header>
+    <main>
+      <div class="content-box">
+        <h2>Welcome to the Kiosk Display</h2>
+        <p>This is a live demonstration of the TMC Enviro Kiosk App. It can show real-time updates, sync with Fulcrum, Relevance AI, and your custom workflows.</p>
+        <p>Below are panels that simulate active data such as job updates, weather, and staff alerts.</p>
+      </div>
+
+      <div class="content-box panel">
+        <h3>Live Job Updates</h3>
+        <ul>
+          <li>Job 3421 – Brush cutting along Princes Hwy completed ✅</li>
+          <li>Job 3422 – Mulching underway in Ararat (ETA: 1.5 days)</li>
+          <li>Job 3423 – Emergency tree removal near Ballan rail crossing</li>
+        </ul>
+      </div>
+
+      <div class="content-box panel">
+        <h3>Current Weather</h3>
+        <ul>
+          <li>Bungaree: 12°C, Light Rain ☔</li>
+          <li>Ararat: 14°C, Cloudy 🌥</li>
+          <li>Warrnambool: 15°C, Sunny ☀️</li>
+        </ul>
+      </div>
+
+      <div class="content-box panel">
+        <h3>Staff Alerts</h3>
+        <ul>
+          <li>First Aid Kit stock check due this week – All crews</li>
+          <li>New SOP uploaded: Safe use of Grapple Saw (SWI-090)</li>
+          <li>Mandatory safety refresher training due by 15 July</li>
+        </ul>
+      </div>
+    </main>
+    <footer>
+      &copy; 2025 TMC Enviro – All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
