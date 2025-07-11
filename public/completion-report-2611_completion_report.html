@@ -55,14 +55,26 @@
       margin-top: 0;
       font-size: 1.25rem;
     }
+    /* PHOTO GRID & CAPTIONS */
     .photo-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       gap: 12px;
     }
+    .photo-grid figure {
+      margin: 0;
+    }
     .photo-grid img {
       width: 100%;
       border-radius: 4px;
+      display: block;
+    }
+    .photo-grid figcaption {
+      font-size: 0.85rem;
+      margin-top: 4px;
+      text-align: center;
+      color: #555;
+      line-height: 1.2;
     }
     footer {
       background: var(--tmc-blue);
@@ -97,29 +109,31 @@
       <p><strong>Location:</strong> Macedon, Victoria (KP 74.670 – 76.114)</p>
       <p><strong>Status:</strong> Completed</p>
       <p><strong>Date Completed:</strong> 2025-07-11</p>
-      <ul><li><strong>Work Description:</strong> Completion Notes – Access Track Gate Installation (KP 74.670 to 76.114)</li><li><strong>Scope of Works:</strong> So, they've reopened the access road from Walkers Road to Walls Rd, you know, that bit at 74.670 to 76.114. Now they gotta put up gates at both ends to keep cars out, right? They're planning to put in a big steel gate, like, at least 3.5 meters wide when it's open, so the fire trucks can get through. They'll also put in bollards if they need to, and V/Line's gonna provide the locks.</li><li><strong>Address:</strong> Quarry Road, Macedon, Victoria, 3440, Australia</li><li><strong>Date of Works:</strong> 2025-06-07 to 2025-06-27</li></ul>
+      <ul><li><strong>Work Description:</strong> Installation of two heavy-duty steel gates at both ends of the access road. Underground cable protection via DBYD and NDD. Provision for future bollards. V/Line to supply locks.</li><li><strong>Scope of Works:</strong> Reopen access road from Walkers Road to Walls Road (KP 74.670 to 76.114). Install steel gates (min. 3.5m opening), provision for bollards, V/Line to provide locks.</li><li><strong>Address:</strong> Quarry Road, Macedon, Victoria, 3440, Australia</li><li><strong>Date of Works:</strong> 2025-06-27 to 2025-07-11</li></ul>
     </div>
 
     <section>
       <h2>Summary</h2>
-      <p>TMC Enviro installed two heavy-duty steel gates at the entry and exit of the reopened access road between Walkers Road and Walls Road, Macedon. The gates meet V/Line’s requirements for emergency vehicle access. Underground cable protection was ensured through non-destructive digging, following identification of Optus and VicTrack cables. The installation phase was completed over two days following several weeks of planning and stakeholder coordination to ensure safe and compliant delivery.</p>
+      <!-- Allow multi‑paragraph summaries by preserving line breaks in TMC Enviro successfully completed the installation of two heavy-duty steel gates at the entry and exit points of the reopened access road between Walkers Road and Walls Road, Macedon. These gates comply with V/Line’s minimum opening width requirements for emergency vehicle access. The project ensured underground cable protection through DBYD investigations and non-destructive digging methods. The installation was carried out over two days, following thorough planning and coordination with stakeholders, and included provisions for future bollards and locks supplied by V/Line. -->
+      <p style="white-space: pre-line;">TMC Enviro successfully completed the installation of two heavy-duty steel gates at the entry and exit points of the reopened access road between Walkers Road and Walls Road, Macedon. These gates comply with V/Line’s minimum opening width requirements for emergency vehicle access. The project ensured underground cable protection through DBYD investigations and non-destructive digging methods. The installation was carried out over two days, following thorough planning and coordination with stakeholders, and included provisions for future bollards and locks supplied by V/Line.</p>
     </section>
 
     <section>
       <h2>Key Findings</h2>
-      <ul><li>Two heavy-duty steel gates installed at both ends of the access road.</li><li>Gates meet V/Line’s minimum 3.5 metre opening width for emergency vehicles.</li><li>Provision for future bollards included; V/Line to supply locks.</li><li>Optus and VicTrack underground cables identified and protected.</li><li>Non-destructive digging used for all post hole excavations.</li></ul>
+      <ul><li>Two heavy-duty steel gates installed at both ends of the access road between Walkers Road and Walls Road.</li><li>Gates meet V/Line’s minimum 3.5 metre opening width for emergency vehicle access.</li><li>Underground cable protection ensured via DBYD reports and non-destructive digging methods.</li><li>Provision for future bollards included; V/Line to supply locks.</li><li>Installation completed over two days following stakeholder coordination and off-site fabrication.</li></ul>
     </section>
 
     <section>
       <h2>Media</h2>
       <h3>Before</h3>
+      <!-- Embed codes expected to use <figure><img><figcaption>... structure (figcaption optional) -->
       <div class="photo-grid"></div>
 
       <h3>During</h3>
-      <div class="photo-grid"><img src="https://tmc-static-assets.vercel.app/91c2c3a9-7d37-4db5-9e37-d92c1db5dd53.jpg" alt="During Install 1" style="max-width:100%; height:auto;" /><img src="https://tmc-static-assets.vercel.app/17b3cbe2-dc1f-428d-b319-1804f4a6ffa6.jpg" alt="During Install 2" style="max-width:100%; height:auto;" /><img src="https://tmc-static-assets.vercel.app/4cc220f2-5099-4a1b-8b54-724d778c96da.jpg" alt="During Install 3" style="max-width:100%; height:auto;" /><img src="https://tmc-static-assets.vercel.app/283b33f5-a10e-40f3-b93a-4eebd32215c6.jpg" alt="During Install 4" style="max-width:100%; height:auto;" /><img src="https://tmc-static-assets.vercel.app/08c7da07-55a6-4931-b714-85ddefd1c6c7.jpg" alt="During Install 5" style="max-width:100%; height:auto;" /><img src="https://tmc-static-assets.vercel.app/d52da45b-8c4e-4433-96b0-66dd29f936c3.jpg" alt="During Install 6" style="max-width:100%; height:auto;" /><img src="https://tmc-static-assets.vercel.app/98c422e4-2baf-48f5-9d82-1465a35aa67c.jpg" alt="During Install 7" style="max-width:100%; height:auto;" /></div>
+      <div class="photo-grid"></div>
 
       <h3>After</h3>
-      <div class="photo-grid"><img src="https://tmc-static-assets.vercel.app/2c4c857d-3c4e-4262-b70c-fdbfcabdfda4.jpg" alt="After 1" style="max-width:100%; height:auto;" /><img src="https://tmc-static-assets.vercel.app/d0288905-8686-45f7-bd24-f0858a176e5d.jpg" alt="After 2" style="max-width:100%; height:auto;" /><img src="https://tmc-static-assets.vercel.app/e2a6bc34-6eb7-4705-913e-5f56f54353f6.jpg" alt="After 3" style="max-width:100%; height:auto;" /></div>
+      <div class="photo-grid"></div>
     </section>
   </main>
 
