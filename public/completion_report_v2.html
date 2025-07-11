@@ -55,14 +55,26 @@
       margin-top: 0;
       font-size: 1.25rem;
     }
+    /* PHOTO GRID & CAPTIONS */
     .photo-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       gap: 12px;
     }
+    .photo-grid figure {
+      margin: 0;
+    }
     .photo-grid img {
       width: 100%;
       border-radius: 4px;
+      display: block;
+    }
+    .photo-grid figcaption {
+      font-size: 0.85rem;
+      margin-top: 4px;
+      text-align: center;
+      color: #555;
+      line-height: 1.2;
     }
     footer {
       background: var(--tmc-blue);
@@ -102,7 +114,8 @@
 
     <section>
       <h2>Summary</h2>
-      <p>{{summary_text}}</p>
+      <!-- Allow multi‑paragraph summaries by preserving line breaks in {{summary_text}} -->
+      <p style="white-space: pre-line;">{{summary_text}}</p>
     </section>
 
     <section>
@@ -113,6 +126,7 @@
     <section>
       <h2>Media</h2>
       <h3>Before</h3>
+      <!-- Embed codes expected to use <figure><img><figcaption>... structure (figcaption optional) -->
       <div class="photo-grid">{{embed_codes_before}}</div>
 
       <h3>During</h3>
