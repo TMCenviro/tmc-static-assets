@@ -9,7 +9,7 @@
     :root { --tmc-grey:#666766; --tmc-orange:#ec6608; --tmc-blue:#666766; --page-bg:#f4f4f4; --panel-bg:#ffffff; --muted:#666; --line:#e6e6e6; }
     html,body{height:100%}
     @page{
-      size:A4;
+      size: A4 landscape;
       margin:15mm 12mm 20mm;
       @top-center{ content: element(page-header); }
       @bottom-center{ content: element(page-footer); }
@@ -37,10 +37,17 @@
     .centre{text-align:center}
     figure{margin:10px 0}
     figcaption{font-size:.85rem; color:#666}
-    .segment-card{ border:1px solid var(--line); border-radius:6px; padding:12px; margin-bottom:16px; page-break-inside:avoid; break-inside:avoid; }
-    .pb{ page-break-before:always; break-before:page; }
+    .segment-card{ border:1px solid var(--line); border-radius:6px; padding:12px; margin-bottom:16px; page-break-inside:avoid; break-inside:avoid-page; -webkit-region-break-inside:avoid; -webkit-column-break-inside:avoid; }
+    /* previously forced breaks; now neutralised */
+    .pb{ /* intentionally left blank to avoid page breaks */ }
     @media print{
       body{ background:#fff; }
+      section{ box-shadow:none; }
+      footer{ position:fixed; bottom:0; }
+      /* prevent splitting of segment blocks and their contents */
+      .segment-card, .tbl-wrap, table, thead, tbody, tr, figure{ page-break-inside: avoid; break-inside: avoid-page; -webkit-region-break-inside: avoid; -webkit-column-break-inside: avoid; }
+      section h2{ page-break-after: avoid; break-after: avoid; }
+    }
       section{ box-shadow:none; }
       footer{ position:fixed; bottom:0; }
     }
@@ -85,6 +92,7 @@
 
     <section>
       <h2>Segments</h2>
+
       <div class="segment-card">
         <div style="display:flex; justify-content:space-between; align-items:baseline">
           <div class="title" style="font-weight:700; color:#666766;">FWD - KP 10.200</div>
@@ -102,7 +110,8 @@
           </table>
         </div>
       </div>
-      <div class="segment-card pb">
+
+      <div class="segment-card">
         <div style="display:flex; justify-content:space-between; align-items:baseline">
           <div class="title" style="font-weight:700; color:#666766;">FWD - KP 11.420</div>
         </div>
@@ -119,7 +128,8 @@
           </table>
         </div>
       </div>
-      <div class="segment-card pb">
+
+      <div class="segment-card">
         <div style="display:flex; justify-content:space-between; align-items:baseline">
           <div class="title" style="font-weight:700; color:#666766;">REV - KP 11.600</div>
         </div>
@@ -136,6 +146,7 @@
           </table>
         </div>
       </div>
+
     </section>
   </main>
 
