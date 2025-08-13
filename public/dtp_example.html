@@ -24,8 +24,6 @@
     header h1{margin:0; font-size:1.4rem}
     header img{height:52px}
     footer{ background:var(--tmc-grey); color:#fff; text-align:center; padding:8px 12px; border-top:4px solid var(--tmc-orange); position:running(page-footer); font-size:.9rem; bottom:0; width:100%; }
-    .page-num::after{ content: counter(page); }
-    .page-total::after{ content: counter(pages); }
     main{padding:24px}
     .info{background:var(--tmc-orange); color:#fff; border-radius:6px; padding:16px 18px; margin-bottom:24px; font-weight:500}
     section{background:var(--panel-bg); padding:18px; border-radius:6px; margin-bottom:24px; box-shadow:0 0 8px rgba(0,0,0,.08)}
@@ -38,18 +36,13 @@
     figure{margin:10px 0}
     figcaption{font-size:.85rem; color:#666}
     .segment-card{ border:1px solid var(--line); border-radius:6px; padding:12px; margin-bottom:16px; page-break-inside:avoid; break-inside:avoid-page; -webkit-region-break-inside:avoid; -webkit-column-break-inside:avoid; }
-    /* previously forced breaks; now neutralised */
-    .pb{ /* intentionally left blank to avoid page breaks */ }
+    .pb{ }
     @media print{
       body{ background:#fff; }
       section{ box-shadow:none; }
       footer{ position:fixed; bottom:0; }
-      /* prevent splitting of segment blocks and their contents */
       .segment-card, .tbl-wrap, table, thead, tbody, tr, figure{ page-break-inside: avoid; break-inside: avoid-page; -webkit-region-break-inside: avoid; -webkit-column-break-inside: avoid; }
       section h2{ page-break-after: avoid; break-after: avoid; }
-    }
-      section{ box-shadow:none; }
-      footer{ position:fixed; bottom:0; }
     }
   </style>
 </head>
@@ -63,32 +56,34 @@
   </header>
 
   <main>
-    <div class="info">
-      <p><strong>Road:</strong> Murray Valley Hwy Section 7</p>
-      <p><strong>Chainage:</strong> KP 10.200 – 12.000 <span class="muted">(1,800 m)</span></p>
-      <p><strong>Envelope Class:</strong> Local/Other · <strong>Required Height:</strong> 5.0 m</p>
-      <p><strong>Inspection Date:</strong> 13 Aug 2025 · <strong>Inspector:</strong> Greg Woodburn</p>
-      <p class="muted">Desktop example generated for scoping. Totals reflect forward and reverse drives; images are placeholders hosted on Vercel.</p>
-    </div>
-
-    <section>
-      <h2>Key Findings & Treatment Summary</h2>
-      <ul>
-        <li>Canopy non-compliance observed in shaded gullies (approx. 220 m cumulative).</li>
-        <li>Isolated low branches at driveways; recommend selective prune rather than full raise.</li>
-        <li>Drainage vegetation encroachment near KP 11.400 affecting shoulder visibility.</li>
-      </ul>
-      <div class="tbl-wrap" style="margin-top:16px;">
-        <table>
-          <thead><tr><th>Direction</th><th class="centre">Segment Count</th><th class="centre">Total Treatment (m)</th></tr></thead>
-          <tbody>
-            <tr><td>Forward</td><td class="centre">2</td><td class="centre">800</td></tr>
-            <tr><td>Reverse</td><td class="centre">1</td><td class="centre">180</td></tr>
-            <tr><td><strong>Combined</strong></td><td class="centre"><strong>3</strong></td><td class="centre"><strong>980</strong></td></tr>
-          </tbody>
-        </table>
+    <article class="lead-page" style="page-break-inside:avoid; break-inside:avoid-page; page-break-after:always;">
+      <div class="info" style="padding:12px 14px; margin-bottom:14px; font-size:0.95rem;">
+        <p><strong>Road:</strong> Murray Valley Hwy Section 7</p>
+        <p><strong>Chainage:</strong> KP 10.200 – 12.000 <span class="muted">(1,800 m)</span></p>
+        <p><strong>Envelope Class:</strong> Local/Other · <strong>Required Height:</strong> 5.0 m</p>
+        <p><strong>Inspection Date:</strong> 13 Aug 2025 · <strong>Inspector:</strong> Greg Woodburn</p>
+        <p class="muted" style="margin:6px 0 0 0;">Desktop example generated for scoping. Totals reflect forward and reverse drives; images are placeholders hosted on Vercel.</p>
       </div>
-    </section>
+
+      <section style="margin-bottom:0; font-size:0.95rem;">
+        <h2>Key Findings & Treatment Summary</h2>
+        <ul style="margin:8px 0 10px 18px;">
+          <li>Canopy non-compliance observed in shaded gullies (approx. 220 m cumulative).</li>
+          <li>Isolated low branches at driveways; recommend selective prune rather than full raise.</li>
+          <li>Drainage vegetation encroachment near KP 11.400 affecting shoulder visibility.</li>
+        </ul>
+        <div class="tbl-wrap" style="margin-top:10px;">
+          <table style="font-size:0.9rem;">
+            <thead><tr><th>Direction</th><th class="centre">Segment Count</th><th class="centre">Total Treatment (m)</th></tr></thead>
+            <tbody>
+              <tr><td>Forward</td><td class="centre">2</td><td class="centre">800</td></tr>
+              <tr><td>Reverse</td><td class="centre">1</td><td class="centre">180</td></tr>
+              <tr><td><strong>Combined</strong></td><td class="centre"><strong>3</strong></td><td class="centre"><strong>980</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </article>
 
     <section>
       <h2>Segments</h2>
@@ -153,7 +148,6 @@
   <footer>
     <div>Generated by <strong>Systems @ TMC enviro</strong> · <a href="https://www.tmcenviro.com.au" target="_blank" style="color:#fff;">www.tmcenviro.com.au</a></div>
     <div>Email: <a href="mailto:systems@tmcenviro.com.au" style="color:#fff;">systems@tmcenviro.com.au</a> · Phone: <a href="tel:+61458922033" style="color:#fff;">+61 458 922 033</a></div>
-    <div>Page <span class="page-num"></span> of <span class="page-total"></span></div>
   </footer>
 </body>
 </html>
