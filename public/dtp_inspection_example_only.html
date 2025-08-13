@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Murray Valley Hwy Section 7 – Height & Width Roads Inspection Report</title>
+  <style>
+    :root { --tmc-grey:#666766; --tmc-orange:#ec6608; --tmc-blue:#666766; --page-bg:#f4f4f4; --panel-bg:#ffffff; --muted:#666; --line:#e6e6e6; }
+    html,body{height:100%}
+    @page{
+      size:A4;
+      margin:15mm 12mm 20mm;
+      @top-center{ content: element(page-header); }
+      @bottom-center{ content: element(page-footer); }
+    }
+    body{
+      font-family:'Montserrat', Arial, sans-serif;
+      background:var(--page-bg);
+      margin:0; color:#333;
+      -webkit-print-color-adjust:exact; print-color-adjust:exact
+    }
+    header{ background:var(--tmc-grey); color:#fff; padding:18px 20px; display:flex; justify-content:space-between; align-items:center; border-bottom:4px solid var(--tmc-orange); position:running(page-header); }
+    header h1{margin:0; font-size:1.4rem}
+    header img{height:52px}
+    footer{ background:var(--tmc-grey); color:#fff; text-align:center; padding:8px 12px; border-top:4px solid var(--tmc-orange); position:running(page-footer); font-size:.9rem }
+    .page-num::after{ content: counter(page); }
+    .page-total::after{ content: counter(pages); }
+    main{padding:24px}
+    .info{background:var(--tmc-orange); color:#fff; border-radius:6px; padding:16px 18px; margin-bottom:24px; font-weight:500}
+    section{background:var(--panel-bg); padding:18px; border-radius:6px; margin-bottom:24px; box-shadow:0 0 8px rgba(0,0,0,.08)}
+    section h2{color:var(--tmc-blue); margin:0 0 10px; font-size:1.2rem}
+    .tbl-wrap{overflow:hidden; border:1px solid var(--line); border-radius:6px}
+    table{width:100%; border-collapse:collapse; table-layout:fixed}
+    th,td{padding:8px 10px; border-bottom:1px solid var(--line); vertical-align:top}
+    th{background:#fafafa; text-align:left; font-size:.9rem; color:var(--tmc-blue)}
+    .centre{text-align:center}
+    figure{margin:10px 0}
+    figcaption{font-size:.85rem; color:#666}
+    .segment-card{ border:1px solid var(--line); border-radius:6px; padding:12px; margin-bottom:16px; page-break-inside:avoid; break-inside:avoid; }
+    .pb{ page-break-before:always; break-before:page; }
+    @media print{
+      body{ background:#fff; }
+      section{ box-shadow:none; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Height & Width Roads Inspection Report</h1>
+      <div class="muted" style="font-size:.9rem;">Murray Valley Hwy Section 7 · Swan Hill</div>
+    </div>
+    <img src="https://tmc-static-assets.vercel.app/tmc-logo.png" alt="TMC enviro logo"/>
+  </header>
+
+  <main>
+    <div class="info">
+      <p><strong>Road:</strong> Murray Valley Hwy Section 7</p>
+      <p><strong>Chainage:</strong> KP 10.200 – 12.000 <span class="muted">(1,800 m)</span></p>
+      <p><strong>Envelope Class:</strong> Local/Other · <strong>Required Height:</strong> 5.0 m</p>
+      <p><strong>Inspection Date:</strong> 13 Aug 2025 · <strong>Inspector:</strong> Greg Woodburn</p>
+      <p class="muted">Desktop example generated for scoping. Totals reflect forward and reverse drives; images are placeholders hosted on Vercel.</p>
+    </div>
+
+    <section>
+      <h2>Key Findings & Treatment Summary</h2>
+      <ul>
+        <li>Canopy non-compliance observed in shaded gullies (approx. 220 m cumulative).</li>
+        <li>Isolated low branches at driveways; recommend selective prune rather than full raise.</li>
+        <li>Drainage vegetation encroachment near KP 11.400 affecting shoulder visibility.</li>
+      </ul>
+      <div class="tbl-wrap" style="margin-top:16px;">
+        <table>
+          <thead><tr><th>Direction</th><th class="centre">Segment Count</th><th class="centre">Total Treatment (m)</th></tr></thead>
+          <tbody>
+            <tr><td>Forward</td><td class="centre">2</td><td class="centre">800</td></tr>
+            <tr><td>Reverse</td><td class="centre">1</td><td class="centre">180</td></tr>
+            <tr><td><strong>Combined</strong></td><td class="centre"><strong>3</strong></td><td class="centre"><strong>980</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2>Segments</h2>
+      <div class="segment-card">
+        <div style="display:flex; justify-content:space-between; align-items:baseline">
+          <div class="title" style="font-weight:700; color:#666766;">FWD - KP 10.200</div>
+        </div>
+        <figure>
+          <img src="https://tmc-static-assets.vercel.app/Example_before_1.png" alt="Before photo KP 10.200 – 10.900" style="width:120px; height:auto; border-radius:4px;"/>
+          <figcaption>Before – View eastbound; low eucalypt limbs over lane at KP 10.550.</figcaption>
+        </figure>
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th>KP Start</th><th>KP End</th><th class="centre">Len (m)</th><th>GPS Start</th><th>GPS End</th></tr></thead>
+            <tbody>
+              <tr><td>10.200</td><td>10.900</td><td class="centre">700</td><td>-35.1234, 143.5678</td><td>-35.1240, 143.5685</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="segment-card pb">
+        <div style="display:flex; justify-content:space-between; align-items:baseline">
+          <div class="title" style="font-weight:700; color:#666766;">FWD - KP 11.420</div>
+        </div>
+        <figure>
+          <img src="https://tmc-static-assets.vercel.app/Example_before_2.png" alt="Before photo KP 10.900 – 11.600" style="width:120px; height:auto; border-radius:4px;"/>
+          <figcaption>Before – Dense canopy over crest; measured clear height ~4.6–4.8 m.</figcaption>
+        </figure>
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th>KP Start</th><th>KP End</th><th class="centre">Len (m)</th><th>GPS Start</th><th>GPS End</th></tr></thead>
+            <tbody>
+              <tr><td>11.420</td><td>11.520</td><td class="centre">100</td><td>-35.1290, 143.5730</td><td>-35.1300, 143.5740</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="segment-card pb">
+        <div style="display:flex; justify-content:space-between; align-items:baseline">
+          <div class="title" style="font-weight:700; color:#666766;">REV - KP 11.600</div>
+        </div>
+        <figure>
+          <img src="https://tmc-static-assets.vercel.app/Example_before_3.png" alt="Before photo KP 11.600 – 12.000" style="width:120px; height:auto; border-radius:4px;"/>
+          <figcaption>Before – Shoulders clear; intermittent saplings obstructing line of sight to Boort Rd intersection.</figcaption>
+        </figure>
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th>KP Start</th><th>KP End</th><th class="centre">Len (m)</th><th>GPS Start</th><th>GPS End</th></tr></thead>
+            <tbody>
+              <tr><td>11.600</td><td>11.780</td><td class="centre">180</td><td>-35.1310, 143.5750</td><td>-35.1320, 143.5760</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>Generated by <strong>Systems @ TMC enviro</strong> · <a href="https://www.tmcenviro.com.au" target="_blank" style="color:#fff;">www.tmcenviro.com.au</a></div>
+    <div>Email: <a href="mailto:systems@tmcenviro.com.au" style="color:#fff;">systems@tmcenviro.com.au</a> · Phone: <a href="tel:+61458922033" style="color:#fff;">+61 458 922 033</a></div>
+    <div>Page <span class="page-num"></span> of <span class="page-total"></span></div>
+  </footer>
+</body>
+</html>
