@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>SWMS-DOT44135-002 | Erosion Remediation Works | TMC enviro</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:Montserrat,Arial,Helvetica,sans-serif;font-size:8.5pt;color:#404041;background:#fff;}
+.page{max-width:277mm;margin:0 auto;padding:8mm 10mm;}
+.print-note{background:#1565c0;color:#fff;padding:8px 14px;border-radius:4px;margin-bottom:10px;font-size:7.5pt;line-height:1.6;}
+.print-note strong{display:block;font-size:8.5pt;margin-bottom:2px;}
+.hdr{background:#404041;color:#fff;padding:12px 18px 10px;border-radius:4px 4px 0 0;display:flex;justify-content:space-between;align-items:flex-start;}
+.hdr-left h1{color:#ec6608;font-size:13pt;margin-bottom:2px;letter-spacing:-0.3px;}
+.hdr-left .sub{font-size:7.5pt;color:#B4B3B3;}
+.hdr-tags{margin-top:8px;display:flex;gap:6px;flex-wrap:wrap;}
+.tag{background:#ec6608;color:#fff;padding:2px 9px;border-radius:10px;font-size:7pt;font-weight:bold;}
+.tag.grey{background:#666766;}
+.tag.red{background:#b71c1c;}
+.tag.purple{background:#6a1b9a;}
+.hdr-right{text-align:right;min-width:150px;}
+.hdr-right .doc-num{color:#ec6608;font-size:11pt;font-weight:bold;}
+.hdr-right .doc-meta{color:#B4B3B3;font-size:7pt;margin-top:2px;line-height:1.5;}
+.hrcw{background:#b71c1c;color:#fff;padding:8px 16px;margin:3px 0;}
+.hrcw h2{font-size:8.5pt;margin-bottom:3px;}
+.hrcw p{font-size:7.5pt;line-height:1.5;}
+.hrcw-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-top:6px;}
+.hrcw-item{background:rgba(255,255,255,0.15);padding:5px 8px;border-radius:3px;font-size:7pt;}
+.hrcw-item strong{display:block;font-size:7.5pt;margin-bottom:2px;}
+.meta-wrap{margin:3px 0;}
+.meta-wrap table{width:100%;border-collapse:collapse;}
+.meta-wrap td{padding:4px 9px;border:1px solid #ccc;font-size:7.5pt;vertical-align:top;}
+.meta-wrap td:first-child{background:#404041;color:#fff;font-weight:bold;width:14%;white-space:nowrap;}
+.sec{margin:6px 0;border:1px solid #ddd;border-radius:3px;page-break-inside:avoid;}
+.sec-hdr{background:#404041;color:#fff;padding:5px 12px;}
+.sec-hdr h2{font-size:8.5pt;text-transform:uppercase;letter-spacing:0.4px;}
+.sec-body{padding:8px 10px;}
+table.data{width:100%;border-collapse:collapse;font-size:7.5pt;margin:4px 0;}
+table.data th{background:#404041;color:#fff;padding:5px 7px;text-align:left;font-size:7pt;}
+table.data td{padding:5px 7px;border:1px solid #ddd;vertical-align:top;line-height:1.4;}
+table.data tr:nth-child(even) td{background:#f7f7f7;}
+.matrix-wrap{display:flex;gap:16px;align-items:flex-start;margin:6px 0;}
+.matrix-table{border-collapse:collapse;font-size:7pt;}
+.matrix-table th,.matrix-table td{border:1px solid #999;padding:4px 6px;text-align:center;width:52px;}
+.matrix-table .axis-label{background:#404041;color:#fff;font-weight:bold;font-size:6.5pt;writing-mode:vertical-rl;transform:rotate(180deg);text-align:center;padding:6px 3px;width:18px;}
+.matrix-table .col-hdr{background:#404041;color:#fff;font-size:6.5pt;font-weight:bold;}
+.m-lo{background:#2e7d32;color:#fff;font-weight:bold;}
+.m-med{background:#f57c00;color:#fff;font-weight:bold;}
+.m-hi{background:#c62828;color:#fff;font-weight:bold;}
+.m-ext{background:#6a1b9a;color:#fff;font-weight:bold;}
+.matrix-legend{font-size:7pt;}
+.matrix-legend table{border-collapse:collapse;}
+.matrix-legend td{padding:4px 10px;border:1px solid #ddd;vertical-align:middle;}
+.swatch{width:16px;height:16px;border-radius:3px;display:inline-block;margin-right:6px;vertical-align:middle;}
+.lo-s{background:#2e7d32;} .med-s{background:#f57c00;} .hi-s{background:#c62828;} .ext-s{background:#6a1b9a;}
+.badge{display:inline-block;padding:2px 7px;border-radius:8px;font-size:7pt;font-weight:bold;color:#fff;white-space:nowrap;}
+.ext{background:#6a1b9a;} .hi{background:#c62828;} .med{background:#f57c00;} .lo{background:#2e7d32;}
+table.steps{width:100%;border-collapse:collapse;font-size:7.5pt;}
+table.steps th{background:#404041;color:#fff;padding:5px 7px;text-align:left;font-size:7pt;}
+table.steps td{padding:5px 7px;border:1px solid #ddd;vertical-align:top;line-height:1.4;}
+table.steps tr:nth-child(even) td{background:#f7f7f7;}
+.cond-row td{background:#fff3cd!important;border-left:4px solid #f57c00;}
+ul.ctrl{margin:3px 0 3px 14px;}
+ul.ctrl li{margin:2px 0;font-size:7.5pt;line-height:1.4;}
+.stop{background:#fff3e0;border-left:5px solid #ec6608;padding:8px 14px;margin:6px 0;border-radius:0 3px 3px 0;page-break-inside:avoid;}
+.stop h3{color:#b71c1c;font-size:8.5pt;margin-bottom:5px;}
+.stop ul{margin-left:14px;}
+.stop li{margin:2px 0;font-size:7.5pt;}
+.emerg{background:#b71c1c;color:#fff;padding:8px 14px;margin:6px 0;border-radius:3px;}
+.emerg h3{font-size:9pt;margin-bottom:5px;}
+.emerg table{width:100%;border-collapse:collapse;}
+.emerg td{padding:3px 7px;border-bottom:1px solid rgba(255,255,255,0.2);font-size:7.5pt;color:#fff;}
+.emerg td:first-child{font-weight:bold;width:36%;}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.three-col{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;}
+.sig-table{width:100%;border-collapse:collapse;}
+.sig-table th{background:#404041;color:#fff;padding:5px 7px;font-size:7pt;text-align:left;}
+.sig-table td{border:1px solid #ccc;padding:3px 7px;font-size:7.5pt;height:34px;vertical-align:bottom;}
+.doc-footer{margin-top:8px;padding-top:6px;border-top:2px solid #ec6608;display:flex;justify-content:space-between;font-size:7pt;color:#888;}
+.warning-band{background:#fff3cd;border:2px solid #f57c00;padding:6px 12px;border-radius:3px;font-size:7.5pt;margin:4px 0;}
+.warning-band strong{color:#b71c1c;}
+@media print{
+  .print-note{display:none;}
+  body{font-size:8pt;}
+  .page{padding:6mm 8mm;max-width:100%;}
+  .hdr,.hrcw,.sec-hdr,table.data th,table.steps th,.badge,.emerg,.stop,.tag,
+  .meta-wrap td:first-child,.sig-table th,.m-lo,.m-med,.m-hi,.m-ext,
+  .matrix-table .axis-label,.matrix-table .col-hdr,.cond-row td,.hrcw-item
+  {-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  .sec{page-break-inside:avoid;}
+  @page{size:A4 landscape;margin:8mm 10mm;}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<div class="print-note">
+  <strong>&#128196; TO PRINT — Ctrl+P (Win) / Cmd+P (Mac) &rarr; A4 Landscape &rarr; Background graphics ON &rarr; Print or Save as PDF. This banner does not print.</strong>
+  SWMS-DOT44135-002 v1.0 | Erosion Remediation | A4 Landscape | 5&times;5 Risk Matrix | TMC enviro | DoT44135 Calder Freeway
+</div>
+
+<!-- HEADER -->
+<div class="hdr">
+  <div class="hdr-left">
+    <h1>SAFE WORK METHOD STATEMENT</h1>
+    <p class="sub">Erosion Remediation Works — Coir Matting, Coir Logs, Stone Rock Anchoring, Excavation &amp; Channel Formation &nbsp;|&nbsp; Calder Freeway, Harcourt VIC &nbsp;|&nbsp; DoT44135</p>
+    <div class="hdr-tags">
+      <span class="tag red">&#9888; HIGH RISK CONSTRUCTION WORK</span>
+      <span class="tag">Reg 5.1.13 — Adjacent to Road</span>
+      <span class="tag purple">Reg 5.1.17 — Powered Mobile Plant</span>
+      <span class="tag purple">Reg 5.1.6 — Excavation &gt;1.5m (Site 2)</span>
+      <span class="tag">TMC enviro</span>
+      <span class="tag grey">v1.0 — 21 July 2026</span>
+    </div>
+  </div>
+  <div class="hdr-right">
+    <div class="doc-num">SWMS-DOT44135-002</div>
+    <div class="doc-meta">
+      Version: v1.0<br>
+      Date: 21 July 2026<br>
+      Supervisor: Greg Woodburn<br>
+      IMS: TMC-CP-001.7<br>
+      Replaces: N/A (new document)
+    </div>
+  </div>
+</div>
+
+<!-- HRCW BANNER -->
+<div class="hrcw">
+  <h2>&#9888; HIGH RISK CONSTRUCTION WORK — MANDATORY SWMS — THREE HRCW TRIGGERS APPLY</h2>
+  <div class="hrcw-grid">
+    <div class="hrcw-item">
+      <strong>Reg 5.1.13 — All Sites</strong>
+      Work adjacent to a road used by traffic — Calder Freeway 110 km/h. MOA-0091800 required. TGS TA052611 A/B/C and TMA mandatory before any works commence.
+    </div>
+    <div class="hrcw-item">
+      <strong>Reg 5.1.17 — All Sites</strong>
+      Use of powered mobile plant — Kubota 5.5t excavator and SVL97-3 skid steer on steep, soft embankments adjacent to live freeway. Plant bogging/recovery risk. Exclusion zones mandatory.
+    </div>
+    <div class="hrcw-item">
+      <strong>Reg 5.1.6 — Site 2 ONLY (Conditional)</strong>
+      Excavation or earthworks where depth may exceed 1.5 m — Site 2 Barkers Creek only. Subject to CMA Waterway Permit and FFG/DEECA approval. Benching, batter or shoring required. Do not commence Site 2 excavation without design approval and permits.
+    </div>
+  </div>
+</div>
+
+<!-- META -->
+<div class="meta-wrap">
+<table>
+  <tr>
+    <td>SWMS No.</td><td><strong>SWMS-DOT44135-002</strong></td>
+    <td>Project / Contract</td><td>DoT44135 — Calder Freeway Fence Repairs and Associated Vegetation Works</td>
+    <td>Client</td><td>Department of Transport and Planning (DTP)</td>
+  </tr>
+  <tr>
+    <td>Location</td><td>Sites 1, 2 &amp; 3 — Calder Freeway, Harcourt / Barkers Creek / Ravenswood South VIC 3453</td>
+    <td>Principal Contractor</td><td>TMC enviro | PO Box 107, Birchip VIC 3483</td>
+    <td>Site Supervisor</td><td>Greg Woodburn | 0458 922 033 | greg@tmcenviro.com.au</td>
+  </tr>
+  <tr>
+    <td>Work Activity</td><td colspan="3">Erosion remediation — coir matting installation, coir log installation, stone rock anchoring, excavation and channel formation, embankment stabilisation. Plant: Kubota 5.5t excavator, Kubota SVL97-3 skid steer, Kenworth SAR tipper. All works adjacent to live Calder Freeway. Site 2 works subject to CMA Waterway Permit and FFG/DEECA approval.</td>
+    <td>Traffic Mgmt</td><td>MOA-0091800 | Traffic Australia (W. Tibbett 0447 256 104) | TGS TA052611 A/B/C | TMA | Activate via RAPP or TOC 1300 107 757 BEFORE any TCDs deployed. Mon–Fri 07:00–17:00 only.</td>
+  </tr>
+  <tr>
+    <td>Sites</td><td><strong>Site 1:</strong> Section 1A — freeway shoulder embankment, gully erosion | <strong>Site 3:</strong> Section 4E — freeway shoulder embankment, gully erosion | <strong>Site 2:</strong> Section 1C — Barkers Creek tributary, head cut, IMMINENT FENCE COLLAPSE — permits required before works</td>
+    <td>Engineering Ref</td><td>DSE26032REP01 — Dryside Engineering (Aust) Pty Ltd, 10 June 2026 | Ed Henty 0458 501 801</td>
+    <td>IMS References</td><td>TMC-CP-001.7, TMC-CP-001.1.1, TMC-CP-005.5, TMC-SWI-201, TMC-SWI-503, TMC-SWI-505, TMC-SWI-601, TMC-CP-011.2, TMC-CP-011.3</td>
+  </tr>
+</table>
+</div>
+
+<!-- RISK MATRIX -->
+<div class="sec">
+<div class="sec-hdr"><h2>Risk Assessment Framework — TMC-CP-001.1.1 &nbsp;|&nbsp; 5&times;5 Matrix &nbsp;|&nbsp; Hierarchy: Eliminate &rarr; Substitute &rarr; Engineer &rarr; Admin &rarr; PPE</h2></div>
+<div class="sec-body">
+<div class="matrix-wrap">
+  <div>
+    <table class="matrix-table">
+      <tr>
+        <td rowspan="7" class="axis-label">LIKELIHOOD &rarr;</td>
+        <th class="col-hdr" style="width:88px;text-align:left;padding-left:6px;">Likelihood \ Consequence</th>
+        <th class="col-hdr">1 Negligible</th>
+        <th class="col-hdr">2 Minor</th>
+        <th class="col-hdr">3 Moderate</th>
+        <th class="col-hdr">4 Major</th>
+        <th class="col-hdr">5 Catastrophic</th>
+      </tr>
+      <tr><th class="col-hdr" style="text-align:left;padding-left:8px;">5 Almost Certain</th><td class="m-med">5</td><td class="m-hi">10</td><td class="m-hi">15</td><td class="m-ext">20</td><td class="m-ext">25</td></tr>
+      <tr><th class="col-hdr" style="text-align:left;padding-left:8px;">4 Likely</th><td class="m-lo">4</td><td class="m-med">8</td><td class="m-hi">12</td><td class="m-hi">16</td><td class="m-ext">20</td></tr>
+      <tr><th class="col-hdr" style="text-align:left;padding-left:8px;">3 Possible</th><td class="m-lo">3</td><td class="m-med">6</td><td class="m-med">9</td><td class="m-hi">12</td><td class="m-hi">15</td></tr>
+      <tr><th class="col-hdr" style="text-align:left;padding-left:8px;">2 Unlikely</th><td class="m-lo">2</td><td class="m-lo">4</td><td class="m-med">6</td><td class="m-med">8</td><td class="m-hi">10</td></tr>
+      <tr><th class="col-hdr" style="text-align:left;padding-left:8px;">1 Rare</th><td class="m-lo">1</td><td class="m-lo">2</td><td class="m-lo">3</td><td class="m-lo">4</td><td class="m-med">5</td></tr>
+      <tr><td colspan="6" style="font-size:6.5pt;color:#666;padding:3px 6px;border-top:2px solid #999;">&#8593; CONSEQUENCE (1–5)</td></tr>
+    </table>
+  </div>
+  <div class="matrix-legend">
+    <table>
+      <tr><td><span class="swatch lo-s">&nbsp;&nbsp;&nbsp;&nbsp;</span><strong>LOW 1–4</strong></td><td style="font-size:7pt;">Routine procedures and PPE.</td></tr>
+      <tr><td><span class="swatch med-s">&nbsp;&nbsp;&nbsp;&nbsp;</span><strong>MEDIUM 5–9</strong></td><td style="font-size:7pt;">Engineering and admin controls documented.</td></tr>
+      <tr><td><span class="swatch hi-s">&nbsp;&nbsp;&nbsp;&nbsp;</span><strong>HIGH 10–14</strong></td><td style="font-size:7pt;color:#c62828;"><strong>Manager approval. Significant risk threshold.</strong></td></tr>
+      <tr><td><span class="swatch ext-s">&nbsp;&nbsp;&nbsp;&nbsp;</span><strong>EXTREME 15–25</strong></td><td style="font-size:7pt;color:#6a1b9a;"><strong>STOP. Do not proceed. Escalate immediately.</strong></td></tr>
+    </table>
+    <p style="font-size:6.5pt;color:#666;margin-top:5px;line-height:1.5;">Ref: TMC-CP-001.1.1 &nbsp;|&nbsp; Residual risk &ge; HIGH = Supervisor sign-off before work proceeds &nbsp;|&nbsp; Risk = Likelihood &times; Consequence<br>
+    &#9888; <strong>Soft embankment note:</strong> Ground conditions may change after rain — re-assess likelihood ratings before each shift if recent rainfall. Wet/soft conditions increase plant bogging likelihood from L2 to L4 or higher.</p>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- PLANT & PPE -->
+<div class="two-col">
+<div class="sec">
+<div class="sec-hdr"><h2>1. Plant, Equipment &amp; Materials</h2></div>
+<div class="sec-body">
+<table class="data">
+  <tr><th style="width:30%">Item</th><th style="width:36%">Purpose</th><th>Requirement</th></tr>
+  <tr><td>Kubota 5.5t excavator</td><td>Channel formation, coir log placement, stone anchoring, excavation</td><td>Current VOC (TMC-CP-005.5), daily pre-start Fulcrum, exclusion zones enforced</td></tr>
+  <tr><td>Kubota SVL97-3 skid steer</td><td>Material carry, positioning on slopes, embankment access</td><td>Current VOC (TMC-CP-005.5), daily pre-start Fulcrum, spotter mandatory on slopes</td></tr>
+  <tr><td>Kenworth SAR tipper</td><td>Material delivery (stone, coir), spoil removal</td><td>Licensed operator, spotter mandatory for all reversing on site</td></tr>
+  <tr><td>Trailer-mounted TMA</td><td>Roadside crash protection per MOA-0091800</td><td>Traffic Australia — W. Tibbett 0447 256 104</td></tr>
+  <tr><td>Ground matting / timber access mats</td><td>Embankment access stabilisation — prevent plant bogging</td><td>Pre-positioned before plant entry on any soft section</td></tr>
+  <tr><td>Heavy recovery vehicle — contact pre-identified</td><td>Plant recovery if excavator or SVL97-3 becomes bogged</td><td>Contact confirmed at pre-start JSB. Do not attempt recovery without TM in place.</td></tr>
+  <tr><td>Coir matting (erosion blanket)</td><td>Surface erosion protection on slopes</td><td>Per Dryside DSE26032REP01 specification</td></tr>
+  <tr><td>Coir logs 150–200 mm dia.</td><td>Channel check dams and toe protection</td><td>Span full channel width — no outflanking gaps</td></tr>
+  <tr><td>Stone rock anchoring</td><td>Anchor coir logs, channel toe protection</td><td>Per DSE26032REP01 design</td></tr>
+  <tr><td>First aid kit + AED</td><td>Emergency treatment</td><td>On all vehicles — first aid officer designated at daily JSB</td></tr>
+  <tr><td>Fire suppression + spill kit</td><td>Fire / chemical spill response</td><td>On all vehicles — crew briefed at induction</td></tr>
+</table>
+</div>
+</div>
+
+<div class="sec">
+<div class="sec-hdr"><h2>2. PPE — All Personnel (Mandatory)</h2></div>
+<div class="sec-body">
+<table class="data">
+  <tr><th style="width:34%">PPE Item</th><th style="width:28%">Standard</th><th>When Required</th></tr>
+  <tr><td>Hi-visibility vest / shirt</td><td>AS 4602.1 — Level 2 fluorescent</td><td><strong>All times on site</strong> — non-negotiable, live freeway</td></tr>
+  <tr><td>Safety boots — waterproof</td><td>AS 2210.3 — steel-capped, ankle support</td><td>All times — waterproof recommended for embankment/waterway work</td></tr>
+  <tr><td>Safety glasses</td><td>AS/NZS 1337.1</td><td>All times near plant, stone work, excavation</td></tr>
+  <tr><td>Hard hat</td><td>AS/NZS 1801</td><td>All times near plant, excavator swing radius, overhead hazards</td></tr>
+  <tr><td>Hearing protection</td><td>SLC80 &ge; 20 dB (Class 4)</td><td>Within 5 m of excavator, SVL97-3, tipper</td></tr>
+  <tr><td>Cut-resistant gloves</td><td>AS/NZS 2161.3 Level D</td><td>All coir matting, wire, stone handling</td></tr>
+  <tr><td>Sunscreen SPF 50+ and hat</td><td>SunSmart / TMC Heat Policy</td><td>All outdoor work — reapply every 2 hrs</td></tr>
+  <tr><td>Long sleeve shirt / long pants</td><td>Cotton or FR-rated (fire season)</td><td>All times</td></tr>
+  <tr><td>Waders / waterproof overtrousers</td><td>Chemical-resistant (Site 2 only)</td><td>Site 2 waterway work only — Barkers Creek proximity</td></tr>
+</table>
+</div>
+</div>
+</div>
+
+<!-- WORK STEPS -->
+<div class="sec">
+<div class="sec-hdr"><h2>3. Work Steps — Hazard Identification, Risk Assessment &amp; Controls &nbsp;|&nbsp; TMC-CP-001.1.1 &nbsp;|&nbsp; &#127381; = Conditional step — Site 2 only (permits required)</h2></div>
+<div class="sec-body">
+
+<div class="warning-band">
+  <strong>&#9888; SITE 2 (BARKERS CREEK) — CONDITIONAL:</strong> Steps marked &#127381; apply to Site 2 only and must NOT commence until: North Central CMA Waterway Permit obtained + FFG/DEECA ecological assessment and permit obtained + Dryside Engineering IFT design approved by DTP + TMC PM written authorisation issued. Site 2 excavation may exceed 1.5 m — Reg 5.1.6 applies — benching, battering or shoring required per approved design.
+</div>
+
+<table class="steps">
+<tr>
+  <th style="width:3%">#</th>
+  <th style="width:12%">Work Step</th>
+  <th style="width:14%">Hazards</th>
+  <th style="width:7%">Initial<br>Risk</th>
+  <th style="width:44%">Control Measures — Hierarchy of Control</th>
+  <th style="width:7%">Residual<br>Risk</th>
+  <th style="width:7%">Responsible</th>
+  <th style="width:6%">Sign &#10003;</th>
+</tr>
+
+<tr>
+  <td><strong>1</strong></td>
+  <td><strong>Site Establishment &amp; Traffic Management Setup</strong><br><small>Deploy TGS TA052611 A/B/C, TMA, cones, signs per MOA-0091800</small></td>
+  <td>Live 110 km/h Calder Freeway during TM setup, vehicle intrusion, worker strike, TM sequence gap</td>
+  <td><span class="badge ext">EXT<br>L4&times;C5<br>=20</span></td>
+  <td><ul class="ctrl">
+    <li><strong>ELIMINATE:</strong> No personnel on or adjacent to carriageway until TGS fully deployed and TC confirms all clear</li>
+    <li><strong>ENGINEER:</strong> TMA deployed FIRST before any other device</li>
+    <li>Activate MOA-0091800 via RAPP or TOC 1300 107 757 BEFORE any TCDs placed</li>
+    <li>Check VicTraffic before each deployment — no conflicting works</li>
+    <li>Certified Traffic Controller leads all TM — no substitution</li>
+    <li>All crew hi-vis Level 2 fluorescent mandatory at all times</li>
+    <li>Mon–Fri 07:00–17:00 only (MOA-0091800 condition)</li>
+    <li>Sequence: advance signs &rarr; taper &rarr; cones &rarr; arrow board &rarr; TMA</li>
+    <li>Radio comms confirmed between all crew before setup</li>
+  </ul></td>
+  <td><span class="badge med">MED<br>L2&times;C3<br>=6</span></td>
+  <td>TC + Supervisor</td>
+  <td>&nbsp;</td>
+</tr>
+
+<tr>
+  <td><strong>2</strong></td>
+  <td><strong>Ground Stability Assessment</strong><br><small>Before any plant enters embankment — probe, visual assessment, mat placement</small></td>
+  <td>Soft/saturated embankment, plant bogging risk, slope instability, undercutting from erosion, unexpected voids beneath topsoil</td>
+  <td><span class="badge hi">HIGH<br>L4&times;C3<br>=12</span></td>
+  <td><ul class="ctrl">
+    <li><strong>STOP if recent rainfall</strong> — re-assess embankment trafficability before any plant entry. Wet soft conditions = HIGH to EXTREME bogging risk</li>
+    <li>Supervisor probes ground at plant entry point with rod/bar before plant approach — minimum 3 probe points across intended path</li>
+    <li>Visual assessment of erosion scarps and erosion undercuts before approaching with plant</li>
+    <li>Ground matting / timber access mats pre-positioned on all soft sections BEFORE plant moves onto embankment</li>
+    <li>Plant approach assessed at walking pace first — operator tests ground at embankment edge before committing full weight</li>
+    <li>Operator brief: if resistance drops unexpectedly or plant begins to sink — stop immediately, reverse off, report to Supervisor</li>
+    <li>Heavy recovery vehicle contact confirmed and on standby before plant enters embankment — see Step 10</li>
+    <li>Results of ground stability assessment recorded in Pre-Start JSB (Fulcrum)</li>
+  </ul></td>
+  <td><span class="badge med">MED<br>L2&times;C3<br>=6</span></td>
+  <td>Supervisor</td>
+  <td>&nbsp;</td>
+</tr>
+
+<tr>
+  <td><strong>3</strong></td>
+  <td><strong>Plant Mobilisation &amp; Positioning on Embankment</strong><br><small>Excavator and SVL97-3 onto slopes adjacent to live freeway</small></td>
+  <td>Rollover on steep/soft embankment, plant sliding toward live carriageway, plant-person interaction, overhead powerlines, loss of traction on grades</td>
+  <td><span class="badge ext">EXT<br>L4&times;C5<br>=20</span></td>
+  <td><ul class="ctrl">
+    <li><strong>ELIMINATE:</strong> Confirm no overhead powerlines in plant operating area (SWI-1001) before plant moves onto embankment</li>
+    <li>Excavator and SVL97-3: 5 m exclusion zone from all personnel during travel and operation on embankment — enforced by spotter</li>
+    <li>Spotter mandatory for ALL plant movements on embankment — direct radio contact with operator at all times</li>
+    <li>Maximum safe operating slope confirmed for each plant item before embankment entry — do not exceed manufacturer specification</li>
+    <li>Plant travels perpendicular to slope where possible — no traversing across fall line on grades &gt;15%</li>
+    <li>Excavator: use bucket as downhill support/anchor when repositioning on slope</li>
+    <li>Both plant items: engine uphill during all slope operations</li>
+    <li>TM fully operational before any plant positions adjacent to carriageway</li>
+    <li>Daily plant pre-start completed in Fulcrum Equipment Hub before mobilisation</li>
+    <li>Current VOC confirmed for both operators — checked in Fulcrum VOC Matrix</li>
+  </ul></td>
+  <td><span class="badge med">MED<br>L2&times;C4<br>=8</span></td>
+  <td>Plant Ops + Supervisor</td>
+  <td>&nbsp;</td>
+</tr>
+
+<tr>
+  <td><strong>4</strong></td>
+  <td><strong>Excavation &amp; Channel Formation</strong><br><small>Sites 1 &amp; 3 — depth &lt;1.5 m. Machine cut and shape drainage channels per DSE26032REP01</small></td>
+  <td>Unexpected services (underground), excavation face collapse, flying debris, plant-person contact in excavation zone, slope instability</td>
+  <td><span class="badge hi">HIGH<br>L4&times;C3<br>=12</span></td>
+  <td><ul class="ctrl">
+    <li><strong>DIAL BEFORE YOU DIG:</strong> 1100 — services identification required before any excavation. Mark-out completed and confirmed at pre-start briefing</li>
+    <li>Depth limited to &lt;1.5 m at Sites 1 &amp; 3 — if unexpected depth required, STOP and review with Supervisor before proceeding</li>
+    <li>No personnel in or adjacent to excavation zone during machine operation — 5 m exclusion enforced</li>
+    <li>Excavation face: battering (1:1 minimum) or shoring if face shows signs of instability at any depth</li>
+    <li>Spoil stockpile minimum 1 m from excavation edge — no surcharging of excavation walls</li>
+    <li>Inspect excavation face before each restart (after rain, overnight break, or disturbance)</li>
+    <li>Channel formation follows Dryside DSE26032REP01 design — no deviation without design approval</li>
+  </ul></td>
+  <td><span class="badge med">MED<br>L2&times;C3<br>=6</span></td>
+  <td>Plant Op + Supervisor</td>
+  <td>&nbsp;</td>
+</tr>
+
+<tr class="cond-row">
+  <td><strong>5</strong></td>
+  <td><strong>&#127381; Excavation — Site 2 ONLY</strong><br><small>CONDITIONAL — Barkers Creek head cut — depth may exceed 1.5 m. HRCW Reg 5.1.6. Requires CMA Waterway Permit + FFG/DEECA permit + DTP-approved IFT design</small></td>
+  <td>Excavation face collapse (&gt;1.5 m vertical cut in soft/saturated embankment), rapid undercutting from waterway, plant bogging in wet ground, confined space approach risk, waterway flooding during works</td>
+  <td><span class="badge ext">EXT<br>L5&times;C5<br>=25</span></td>
+  <td><ul class="ctrl">
+    <li><strong>DO NOT COMMENCE Site 2 excavation until: CMA Waterway Permit obtained + FFG/DEECA permit obtained + Dryside IFT design approved by DTP + TMC PM written authorisation issued</strong></li>
+    <li>HRCW Reg 5.1.6 applies — excavation management plan required per approved design before entry</li>
+    <li>Benching (minimum 1:1 batter) or engineered shoring required for all faces &gt;1.5 m — as per Dryside design</li>
+    <li>No personnel within 2 m of excavation face at any time — all inspection from surface level</li>
+    <li>Waterway flow check before commencement — works suspended if creek level rising or upstream rain event forecast</li>
+    <li>Continuous spotter monitoring excavation face stability during machine operation</li>
+    <li>Emergency egress route confirmed and clear at all times</li>
+    <li>Heavy recovery vehicle on standby — wet ground near waterway = elevated bogging risk (see Step 10)</li>
+    <li>This step subject to separate detailed JSA on commencement of Site 2 works</li>
+  </ul></td>
+  <td><span class="badge hi">HIGH<br>L2&times;C5<br>=10</span></td>
+  <td>Supervisor + PM sign-off</td>
+  <td>&nbsp;</td>
+</tr>
+
+<tr>
+  <td><strong>6</strong></td>
+  <td><strong>Coir Matting Installation on Slopes</strong><br><small>Roll out, peg and secure erosion blanket per DSE26032REP01</small></td>
+  <td>Manual handling on steep wet slopes, slip/fall on embankment, snake/fauna encounter, matting spring-back</td>
+  <td><span class="badge hi">HIGH<br>L4&times;C3<br>=12</span></td>
+  <td><ul class="ctrl">
+    <li>3-point contact on embankment at all times — no running or rushing on grades</li>
+    <li>Minimum 2 persons for all matting on slopes steeper than 1:3 — no solo slope work</li>
+    <li>Probe vegetation before putting hands to ground — snake/fauna awareness on embankment</li>
+    <li>Waterproof non-slip footwear mandatory for wet embankment work</li>
+    <li>Install top-of-bank to bottom — never unroll from below</li>
+    <li>Peg spacing per DSE26032REP01 (max 1 m) — ensure full contact with ground, no bridging</li>
+    <li>Completed installation inspected by Supervisor — photo evidence in Fulcrum before next section</li>
+  </ul></td>
+  <td><span class="badge med">MED<br>L2&times;C3<br>=6</span></td>
+  <td>Field crew + Supervisor</td>
+  <td>&nbsp;</td>
+</tr>
+
+<tr>
+  <td><strong>7</strong></td>
+  <td><strong>Coir Log Installation</strong><br><small>Position 150–200 mm dia coir logs across channels and drainage paths</small></td>
+  <td>Manual handling (logs 15–30 kg), pinch/crush from log rolling, incorrect placement leaving outflanking gaps, waterway blockage</td>
+  <td><span class="badge med">MED<br>L3&times;C2<br>=6</span></td>
+  <td><ul class="ctrl">
+    <li>Team lifts for all logs over 15 kg — no single-person carry on slopes</li>
+    <li>Logs positioned using excavator bucket where access allows — minimise manual carry on steep grades</li>
+    <li>Span full channel width — extend beyond channel edges to prevent outflanking</li>
+    <li>Log orientation and staking per DSE26032REP01 — check dam height consistent with design</li>
+    <li>Confirm drainage path not fully blocked — low-flow bypass per design maintained</li>
+    <li>Supervisor inspects each log placement before proceeding — photo in Fulcrum</li>
+  </ul></td>
+  <td><span class="badge lo">LOW<br>L2&times;C1<br>=2</span></td>
+  <td>Field crew</td>
+  <td>&nbsp;</td>
+</tr>
+
+<tr>
+  <td><strong>8</strong></td>
+  <td><strong>Stone Rock Anchoring</strong><br><small>Place and compact stone anchors for coir logs and channel toe per DSE26032REP01</small></td>
+  <td>Crush/pinch from stone placement, flying stone from excavator placement, foot crush from dropped stone, manual handling</td>
+  <td><span class="badge med">MED<br>L3&times;C3<br>=9</span></td>
+  <td><ul class="ctrl">
+    <li>Safety boots mandatory — steel-capped protection against dropped stone</li>
+    <li>Machine placement preferred for larger stone — minimise manual placement where excavator can reach</li>
+    <li>5 m exclusion zone maintained around excavator during stone placement</li>
+    <li>Safety glasses mandatory during all stone work — flying debris from placement</li>
+    <li>Stone quantities and placement per DSE26032REP01 BOQ — no deviation without design approval</li>
+    <li>Photo evidence in Fulcrum at each completed anchoring point</li>
+  </ul></td>
+  <td><span class="badge lo">LOW<br>L2&times;C2<br>=4</span></td>
+  <td>Field crew + Plant Op</td>
+  <td>&nbsp;</td>
+</tr>
+
+<tr>
+  <td><strong>9</strong></td>
+  <td><strong>Tipper Operations — Material Delivery &amp; Spoil Removal</strong><br><small>Kenworth SAR tipper reversing, tipping and loading on site adjacent to live freeway</small></td>
+  <td>Tipper reversing — pedestrian strike, tipper roll-back on slope, raised tray contact with overhead services, unstable tipping surface, proximity to live traffic</td>
+  <td><span class="badge hi">HIGH<br>L4&times;C4<br>=16</span></td>
+  <td><ul class="ctrl">
+    <li>Spotter mandatory for ALL reversing movements — direct radio contact with driver, positioned with clear line of sight</li>
+    <li>No personnel within 5 m of tipper during reversing or tipping operations</li>
+    <li>Tipping surface assessed before tipping — no tipping on soft or sloped ground unless supported by timber mats and confirmed stable</li>
+    <li>Check overhead clearance before raising tray — minimum 6 m clearance confirmed at delivery point</li>
+    <li>Tipper chocked/braked before raising tray — vehicle must not move during tipping cycle</li>
+    <li>Tipper approach and departure route pre-planned — no ad-hoc reversing near live carriageway</li>
+    <li>TM fully operational before tipper enters work zone from carriageway</li>
+  </ul></td>
+  <td><span class="badge med">MED<br>L2&times;C3<br>=6</span></td>
+  <td>Driver + Spotter + Supervisor</td>
+  <td>&nbsp;</td>
+</tr>
+
+<tr>
+  <td><strong>10</strong></td>
+  <td><strong>Plant Recovery Operations</strong><br><small>If excavator or SVL97-3 becomes bogged or stuck on soft embankment adjacent to live freeway</small></td>
+  <td>Plant sliding toward live carriageway, crushing of recovery personnel, secondary bogging of recovery vehicle, snap-back of recovery lines, overloading of anchor points, live traffic exposure during extended recovery operation</td>
+  <td><span class="badge ext">EXT<br>L3&times;C5<br>=15</span></td>
+  <td><ul class="ctrl">
+    <li><strong>STOP IMMEDIATELY</strong> if plant begins to bog — do not attempt to drive plant further. Operator to leave plant in gear/park with boom lowered if safe to do so</li>
+    <li><strong>Account for all personnel</strong> before any recovery action — no one within 2&times; recovery line length of any tensioned line during recovery</li>
+    <li>Notify Supervisor immediately — Supervisor assesses situation before any recovery attempt</li>
+    <li>Do NOT attempt self-recovery with another bogged or undersized vehicle — use professional heavy haulage recovery only</li>
+    <li>Heavy recovery vehicle contact confirmed at pre-start JSB — operator has number on person</li>
+    <li>TM must remain fully operational throughout recovery — notify TC and consider extending TM footprint if recovery vehicle required on shoulder</li>
+    <li>Notify DTP/client (Greg Woodburn 0458 922 033) if recovery will cause extended traffic management beyond MOA-0091800 parameters</li>
+    <li>Recovery lines/slings rated for plant weight (5.5t excavator + SVL97-3 up to 5.4t) — check before attachment</li>
+    <li>All personnel behind cover (vehicle body) during tensioning of recovery lines — never stand in line of potential snap-back</li>
+    <li>Post-recovery: inspect plant for damage before returning to service — record in Fulcrum Equipment Hub</li>
+    <li>Incident report raised in Fulcrum regardless of outcome — bogging events recorded</li>
+  </ul></td>
+  <td><span class="badge med">MED<br>L2&times;C4<br>=8</span></td>
+  <td>Supervisor + PM</td>
+  <td>&nbsp;</td>
+</tr>
+
+<tr class="cond-row">
+  <td><strong>11</strong></td>
+  <td><strong>&#127381; Working Near Waterway</strong><br><small>CONDITIONAL — Site 2 (Barkers Creek tributary) only. Subject to CMA Waterway Permit + FFG/DEECA approval</small></td>
+  <td>Waterway flooding / flash rise, slipping on wet creek banks, chemical/sediment runoff to waterway, disturbing aquatic habitat, fauna encounter (platypus, water rats), unexpected waterway permit conditions</td>
+  <td><span class="badge hi">HIGH<br>L3&times;C4<br>=12</span></td>
+  <td><ul class="ctrl">
+    <li>DO NOT commence until all permits received and TMC PM written authorisation issued — see conditional warning above</li>
+    <li>Check Bureau of Meteorology for upstream rainfall before commencement — suspend if &gt;10 mm forecast within 24 hrs</li>
+    <li>Sediment control (silt fences, sediment traps) installed at waterway interface BEFORE any earthworks commence</li>
+    <li>No fuel, chemical or wash water to enter Barkers Creek — spill kit deployed at waterway edge</li>
+    <li>Waders / waterproof PPE worn for any personnel working below top of bank</li>
+    <li>Fauna spotter check before plant enters waterway area — platypus and water rat habitat present in Barkers Creek</li>
+    <li>Works within waterway as per CMA Permit conditions only — no deviation without CMA approval</li>
+    <li>EPA notification prepared and ready if uncontrolled discharge occurs — Supervisor holds EPA emergency number</li>
+  </ul></td>
+  <td><span class="badge med">MED<br>L2&times;C3<br>=6</span></td>
+  <td>Supervisor + PM</td>
+  <td>&nbsp;</td>
+</tr>
+
+<tr>
+  <td><strong>12</strong></td>
+  <td><strong>Site Cleanup &amp; TM Demobilisation</strong><br><small>Remove plant from embankment, clear site, remove TCDs in reverse order, deactivate MOA</small></td>
+  <td>Live traffic re-exposure during TM removal, unsecured materials on carriageway, plant sliding during de-mobilisation from embankment, incomplete site clearance</td>
+  <td><span class="badge ext">EXT<br>L4&times;C5<br>=20</span></td>
+  <td><ul class="ctrl">
+    <li>Plant removed from embankment and confirmed on flat ground BEFORE any TM removal commences</li>
+    <li>Full site sweep by Supervisor — zero stone, matting, spoil or plant material on or near carriageway</li>
+    <li>TCDs removed in strict reverse order of installation — per TGS TA052611 protocol</li>
+    <li>All personnel clear of carriageway before TMA relocated</li>
+    <li>Deactivate MOA-0091800 via RAPP or TOC 1300 107 757 only after ALL devices removed and full site clear confirmed</li>
+    <li>Plant de-mobilisation documented in Fulcrum — post-works plant condition noted</li>
+  </ul></td>
+  <td><span class="badge med">MED<br>L2&times;C3<br>=6</span></td>
+  <td>TC + Supervisor</td>
+  <td>&nbsp;</td>
+</tr>
+</table>
+</div>
+</div>
+
+<!-- STOP RULES -->
+<div class="stop">
+  <h3>&#9888; STOP WORK — DO NOT COMMENCE IF ANY OF THE FOLLOWING APPLY:</h3>
+  <ul>
+    <li>Pre-Start JSB not completed in Fulcrum | MOA-0091800 not activated via RAPP or TOC (1300 107 757) | TGS TA052611 A/B/C not set up or TMA not deployed</li>
+    <li>Ground stability assessment not completed by Supervisor before plant entry onto embankment</li>
+    <li>Heavy recovery vehicle contact not confirmed at pre-start briefing — plant must not enter soft embankment without recovery on standby</li>
+    <li>Plant operator VOC not confirmed | Spotter not assigned for plant on embankment | Certified Traffic Controller not on site</li>
+    <li>Recent rainfall has not been assessed for embankment trafficability — re-assess likelihood ratings after rain events before proceeding</li>
+    <li>Dial Before You Dig (1100) services check not completed for excavation areas</li>
+    <li><strong>&#127381; Site 2 only:</strong> CMA Waterway Permit NOT obtained | FFG/DEECA permit NOT obtained | Dryside IFT design NOT approved by DTP | TMC PM written authorisation NOT issued — STOP, do not commence Site 2 works under any circumstances</li>
+    <li>Emergency contacts not confirmed with all crew | Site conditions materially different from those described — re-brief before proceeding</li>
+  </ul>
+</div>
+
+<!-- EMERGENCY + SIGN-OFF -->
+<div class="two-col">
+
+<div class="sec">
+<div class="sec-hdr"><h2>4. Emergency Procedures</h2></div>
+<div class="sec-body">
+<div class="emerg">
+  <h3>EMERGENCY CONTACTS — ON SITE AT ALL TIMES</h3>
+  <table>
+    <tr><td>Emergency Services</td><td><strong>000</strong></td></tr>
+    <tr><td>VicRoads Traffic Operations Centre</td><td><strong>13 11 70</strong></td></tr>
+    <tr><td>Activate/Deactivate MOA — RAPP or TOC</td><td><strong>1300 107 757</strong></td></tr>
+    <tr><td>Greg Woodburn — Supervisor / TMC PM</td><td><strong>0458 922 033</strong></td></tr>
+    <tr><td>William Tibbett — Traffic Australia (TM)</td><td><strong>0447 256 104</strong></td></tr>
+    <tr><td>Travis Howell — TMC Site</td><td><strong>0428 425 337</strong></td></tr>
+    <tr><td>Heavy Recovery — contact confirmed at JSB</td><td>On site pack</td></tr>
+    <tr><td>DTP PM — Colby Madill</td><td>On site pack</td></tr>
+    <tr><td>North Central CMA (Site 2 waterway)</td><td>On site pack</td></tr>
+    <tr><td>Ed Henty — Dryside Engineering</td><td><strong>0458 501 801</strong></td></tr>
+  </table>
+</div>
+<table class="data" style="margin-top:6px;">
+  <tr><th style="width:24%">Emergency Type</th><th>Immediate Action</th><th style="width:12%">SWI Ref</th></tr>
+  <tr><td><strong>Vehicle intrusion / TM compromised</strong></td><td>Stop all works. Do not enter carriageway. Account for all personnel. Call 000. Notify TOC 13 11 70 and Greg 0458 922 033. Preserve scene.</td><td>SWI-601, SWI-002</td></tr>
+  <tr><td><strong>Plant rollover / stuck on embankment</strong></td><td>Stop all works. Operator stays in cab if safe. Do not approach downslope of plant. Account for all personnel. Call 000 if injury. Notify Greg immediately. Contact heavy recovery. Keep TM operational throughout.</td><td>SWI-601, SWI-603</td></tr>
+  <tr><td><strong>Excavation face collapse</strong></td><td>Move all personnel away from excavation immediately. Do not re-enter. Call 000 if person trapped. Notify Greg. Barricade area — do not disturb until emergency services attend.</td><td>SWI-601</td></tr>
+  <tr><td><strong>Injury / first aid</strong></td><td>Provide immediate first aid. Call 000 if serious. Do not move seriously injured person. Notify Greg. Preserve scene for investigation.</td><td>SWI-603</td></tr>
+  <tr><td><strong>Waterway spill / discharge</strong></td><td>Contain immediately. Block drainage to waterway. Notify Supervisor. EPA emergency if waterway impacted. Notify North Central CMA.</td><td>SWI-505</td></tr>
+  <tr><td><strong>Fire on site</strong></td><td>Assess. Suppress if safe. Evacuate. Call 000. Notify VicRoads TOC 13 11 70.</td><td>SWI-504</td></tr>
+</table>
+</div>
+</div>
+
+<div class="sec">
+<div class="sec-hdr"><h2>5. Worker Consultation &amp; Sign-Off</h2></div>
+<div class="sec-body">
+<p style="font-size:7.5pt;margin-bottom:6px;"><strong>All workers must read, understand and sign below before commencing work and after any re-brief.</strong> By signing I confirm I have read and understood this SWMS, understand all hazards and controls for this site, and will follow the controls at all times. Supervisors must re-brief and obtain fresh signatures if conditions change.</p>
+<table class="sig-table">
+  <tr><th style="width:24%">Full Name (print)</th><th style="width:18%">Role</th><th style="width:28%">Signature</th><th style="width:12%">Date</th><th style="width:10%">White Card</th><th style="width:8%">VOC &#10003;</th></tr>
+  <tr><td>Greg Woodburn</td><td>Site Supervisor</td><td>&nbsp;</td><td>&nbsp;</td><td style="text-align:center;">&#10003;</td><td>&nbsp;</td></tr>
+  <tr><td>&nbsp;</td><td>Excavator Operator</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+  <tr><td>&nbsp;</td><td>SVL97-3 Operator</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+  <tr><td>&nbsp;</td><td>Tipper Driver</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+  <tr><td>&nbsp;</td><td>Traffic Controller</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+  <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+  <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+  <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+  <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+</table>
+
+<div class="sec" style="margin-top:8px;">
+<div class="sec-hdr"><h2>6. Change Log &amp; Document Control</h2></div>
+<div class="sec-body">
+<table class="data">
+  <tr><th style="width:13%">Date</th><th style="width:8%">Version</th><th>Change</th><th style="width:20%">Author</th></tr>
+  <tr><td>21 Jul 2026</td><td>v1.0</td><td>Initial issue — DoT44135 erosion remediation Sites 1, 2 &amp; 3. A4 Landscape, 5&times;5 matrix. Plant recovery and soft embankment hazards included. Site 2 conditional steps per permit requirements.</td><td>Page (TMC enviro)</td></tr>
+  <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+</table>
+<table class="data" style="margin-top:4px;font-size:7pt;">
+  <tr><td style="width:18%;background:#404041;color:#fff;font-weight:bold;">Approved By</td><td>Greg Woodburn — Site Supervisor, TMC enviro</td><td style="width:18%;background:#404041;color:#fff;font-weight:bold;">HRCW Clauses</td><td>OHS Reg 5.1.13 (road) | Reg 5.1.17 (powered mobile plant) | Reg 5.1.6 (Site 2 excavation &gt;1.5m)</td></tr>
+  <tr><td style="background:#404041;color:#fff;font-weight:bold;">Related Docs</td><td colspan="3">SWMS-DOT44135-001 | HSEQMP-DOT44135-001 | DSE26032REP01 | DOT44135-VAR-ERO-002 | MOA-0091800 | TGS TA052611 A/B/C | TMC-CP-001.7 | TMC-CP-005.5 | TMC-SWI-503 | TMC-SWI-505 | TMC-CP-011.2 | TMC-CP-011.3</td></tr>
+</table>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="doc-footer">
+  <span><strong>TMC enviro</strong> | PO Box 107, Birchip VIC 3483</span>
+  <span>SWMS-DOT44135-002 v1.0 | Erosion Remediation | A4 Landscape | Issued 21 July 2026</span>
+  <span>DoT44135 — Calder Freeway | Sites 1, 2 &amp; 3 | Harcourt VIC</span>
+</div>
+
+</div>
+</body>
+</html>
