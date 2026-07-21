@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en-au">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>TMC-MCM-HRML-001 v0.4 — Hazard & Risk Module Library</title>
+<style>
+:root{--tmc-orange:#ff6a00;--tmc-black:#1f1f1f;--line:#cfd8dc;--extreme:#c62828;--high:#ff6a00;--medium:#f9a31b;--low:#5a7a45;--page-w:297mm;--page-h:210mm}
+*{box-sizing:border-box}html,body{margin:0;padding:0;background:#e9ecef;color:var(--tmc-black);font-family:Arial,Helvetica,sans-serif;line-height:1.28}body{padding:10px 0 30px}
+.page{width:calc(var(--page-w)-2mm);min-height:calc(var(--page-h)-2mm);margin:0 auto 14px;background:#fff;border:1px solid #d7d7d7;box-shadow:0 6px 24px rgba(0,0,0,.12);page-break-after:always;position:relative}
+.header{display:grid;grid-template-columns:38mm 1fr 52mm;gap:5mm;align-items:center;padding:5mm 7mm 3mm;border-bottom:2.5mm solid var(--tmc-orange)}
+.logo-box{height:20mm;display:flex;align-items:center;justify-content:center;border:1px solid var(--line);background:#fff;padding:1mm}
+.logo-box img{max-height:18mm;max-width:36mm;object-fit:contain}
+.doc-meta{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--line);border-top:1px solid var(--line);background:#fafafa}
+.meta-cell{min-height:15mm;border-right:1px solid var(--line);padding:2mm}
+.meta-cell:nth-child(4n){border-right:0}
+.label{font-weight:700;font-size:7pt;color:#333;text-transform:uppercase}
+.field{margin-top:1.5mm;min-height:4mm;border-bottom:1px solid #777;font-size:7.4pt}
+.content{padding:4mm 7mm 16mm}
+h2{font-size:11pt;margin:2mm 0;padding:1.8mm;background:var(--tmc-black);color:#fff;border-left:2.5mm solid var(--tmc-orange)}
+.module-table{width:100%;border-collapse:collapse;margin:1.6mm 0 2.6mm;font-size:7pt}
+.module-table th,.module-table td{border:1px solid var(--line);padding:4px;vertical-align:top}
+.risk-badge{display:inline-block;padding:2px 6px;border-radius:3px;color:#fff;font-weight:700;font-size:9px}
+.risk-x{background:var(--extreme)}.risk-h{background:var(--high)}.risk-m{background:var(--medium);color:#1f1f1f}.risk-l{background:var(--low)}
+.footer{display:grid;grid-template-columns:1fr 1fr 1fr;gap:3mm;border-top:1.2mm solid var(--tmc-orange);padding:2mm 7mm 3mm;background:#fafafa;color:#555;font-size:7px;position:absolute;left:0;right:0;bottom:0}
+@page{size:A4 landscape;margin:8mm}
+@media print{.page{border:0;box-shadow:none}}
+</style>
+</head>
+<body>
+
+<!-- Cover -->
+<div class="page">
+  <div class="header">
+    <div class="logo-box"><img src="https://tmc-static-assets.vercel.app/badges/tmc-enviro-iso-banner-q-marks-only-transparent.png" alt="TMC enviro"/></div>
+    <div>
+      <h1>Hazard &amp; Risk Module Library</h1>
+      <div style="margin-top:6px;font-weight:700;color:var(--tmc-orange)">TMC enviro / MCM Services — SWMS Agent Knowledge Base (v0.4 draft)</div>
+    </div>
+    <div style="text-align:right;font-size:10px;">Integrated Management System<br>PO Box 107<br>Birchip VIC 3483</div>
+  </div>
+  <div class="doc-meta">
+    <div class="meta-cell"><div class="label">Document Type</div><div class="field">Hazard &amp; Risk Library</div></div>
+    <div class="meta-cell"><div class="label">Business Units</div><div class="field">TMC enviro / MCM Services</div></div>
+    <div class="meta-cell"><div class="label">Version</div><div class="field">v0.4 Review Draft</div></div>
+    <div class="meta-cell"><div class="label">Date</div><div class="field">July 2026</div></div>
+    <div class="meta-cell"><div class="label">Prepared For</div><div class="field">SWMS / HSEQMP LLM Agent</div></div>
+    <div class="meta-cell"><div class="label">Prepared By</div><div class="field">TMC enviro Commercial / HSEQ</div></div>
+    <div class="meta-cell"><div class="label">Application</div><div class="field">Civil, vegetation, road, rail, contaminated soils</div></div>
+    <div class="meta-cell"><div class="label">Document Ref</div><div class="field">TMC-MCM-HRML-001</div></div>
+  </div>
+  <div class="content">
+    <h2>Purpose &amp; Use</h2>
+    <p>This master hazard library provides reusable hazard modules for SWMS and HSEQMP drafting. Agents must only select modules relevant to the job and customise controls to site conditions, client requirements, permits and plant.</p>
+
+    <h2>Risk matrix (IMS-aligned)</h2>
+    <p><strong>Likelihood (1–5) × Consequence (1–5) = Risk</strong><br>Low 1–4 | Medium 5–9 | High 10–14 | Extreme 15–25. R ≥ 10 = significant.</p>
+  </div>
+  <div class="footer"><div>TMC enviro</div><div>Controlled when published in IMS</div><div style="text-align:right">TMC-MCM-HRML-001 v0.4</div></div>
+</div>
+
+<!-- Sample module section (repeat for all HM-001..HM-031) -->
