@@ -1,0 +1,29 @@
+TMC enviro Environmental Aspects & Impacts Register — TMC-CP-002.1.1
+Date: 2026-07-22
+
+Risk assessment method: Likelihood (1–5) × Consequence (1–5) = Risk (R). Significance threshold: R ≥ 10 = Significant.
+
+Significant Environmental Aspects (R ≥ 10):
+- Herbicide application: Chemical use, drift, runoff — Potential impact: waterway and soil pollution — Risk: 3 × 5 = 15 (HIGH). Controls: Licensed operators, buffer zones, low-toxicity products, weather monitoring, chemical use records (ACUP/AQF), SDS.
+- Working near waterways: Run-off, sediment, herbicide entry — Potential impact: water pollution, aquatic habitat damage — Risk: 3 × 4 = 12 (HIGH). Controls: Buffer zones, no-spray zones, riparian training, silt controls, permits (Water Act/CMA), monitoring.
+- Fuel storage (utes/trailers): Spill risk — Potential impact: soil and water contamination — Risk: 3 × 4 = 12 (HIGH). Controls: Bunded containers, locked storage, spill kits, spill response drills, weekly inspection logs.
+- Storage of agricultural chemicals: Improper storage, leaks, spills — Potential impact: soil and water contamination — Risk: 3 × 4 = 12 (HIGH). Controls: Locked chemical stores, drip trays, labelled inventory, SDS availability, training and records.
+- Soil disturbance (civil / ripping): Excavation, stockpiles, sediment — Potential impact: waterway turbidity and stormwater impact — Risk: 3 × 4 = 12 (HIGH). Controls: Silt fences, stabilised access, sediment basins, daily inspections, erosion control measures.
+- Vegetation clearing: Removal of vegetation, soil disturbance — Potential impact: habitat loss, erosion, sediment movement — Risk: 3 × 4 = 12 (HIGH). Controls: Pre-clear ecological surveys, trained operators, fauna checks, staged clearing, erosion controls, monitoring and photo-points.
+
+Non-Significant Environmental Aspects (R < 10):
+- Contractor labour performance variability — Risk: 9 (MED). Controls: Induction, supervision, SWMS, contract clauses.
+- Dust generation — Risk: 9 (MED). Controls: Water suppression, speed limits, weather monitoring.
+- Pest animal baiting — Risk: 8 (MED). Controls: Licensed fumigators, bait placement protocols, carcass removal procedures.
+- Wildlife handling — Risk: 8 (MED). Controls: Trained spotters, minimal handling, fauna relocation protocols.
+- Machinery use (emissions, noise) — Risk: 6 (MED). Controls: Pre-start checks, maintenance, noise controls, restricted hours.
+- Fencing installation — Risk: 4 (LOW). Controls: Defined work areas, manual methods, minimal disturbance.
+- Green waste removal — Risk: 4 (LOW). Controls: Approved disposal, mulching, recycling where possible.
+- Office/workshop activities — Risk: 2 (LOW). Controls: Housekeeping, waste segregation, energy efficiency.
+
+Legal and regulatory links:
+- Significant aspects tie to: L001 (EP Act), L002 (EP Regs), L005 (Water Act), L011 (Dangerous Goods), L015/L016 (chemical use), L003 (Flora & Fauna), L007 (Planning/permits), L008 (Aboriginal Heritage) where ground disturbance applies.
+
+Management notes:
+- Significant aspects must be included in project HSEQMP risk registers, SWMS, JSBs and pre-starts.  
+- Environmental controls must be monitored with inspection checklists and recorded in Fulcrum (photos, chemical use records, vehicle hygiene records).
