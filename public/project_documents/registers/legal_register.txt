@@ -1,0 +1,33 @@
+TMC enviro Legal Register (extract) — TMC-CP-003.6.1
+Date: 2026-07-22
+
+Safety (ISO 45001):
+L009 - Occupational Health and Safety Act 2004 (Vic): General duty to provide and maintain a working environment that is safe and without risks to health for workers and others.
+L010 - Occupational Health and Safety Regulations 2017 (Vic): Manage risks relating to plant, hazardous manual handling, noise, and high-risk work activities.
+L011 - Dangerous Goods (Storage & Handling) Regulations 2022 (Vic): Ensure safe storage, handling and segregation of fuel, herbicides and other flammable or hazardous substances.
+L012 - Compliance Code: Plant (WorkSafe Vic): Identify plant hazards and implement controls for machinery such as excavators, tractors, mulchers and similar operational equipment.
+L013 - Compliance Code: Noise (WorkSafe Vic): Assess and control worker exposure to hazardous noise from chainsaws, chippers, mowers and other powered equipment.
+L014 - Compliance Code: Hazardous Manual Handling (WorkSafe Vic): Minimise manual handling risks associated with fencing, dragging vegetation, lifting chemical drums and similar tasks.
+L021 - AS 1940:2017 — Storage and Handling of Flammable and Combustible Liquids: Apply compliant storage controls for fuels and flammable liquids including bunding, containment and segregation.
+
+Environment (ISO 14001):
+L001 - Environment Protection Act 2017 (Vic): Comply with the General Environmental Duty (GED) by reducing risks of pollution and harm to human health and the environment so far as reasonably practicable.
+L002 - Environment Protection Regulations 2021 (Vic): Control waste, stormwater, air quality and other operational environmental risks.
+L003 - Flora and Fauna Guarantee Act 1988 (Vic): Protect threatened species and ecological communities during planning and delivery of works.
+L004 - Catchment and Land Protection Act 1994 (Vic): Prevent and manage spread of noxious weeds and pest animals.
+L005 - Water Act 1989 (Vic): Obtain approvals and apply controls for works affecting waterways, drainage lines and riparian zones.
+L006 - Biosecurity Act 2015 (Cth): Prevent transfer of weeds, pests and contaminants between sites, regions and assets.
+L007 - Planning and Environment Act 1987 (Vic): Comply with planning permits, overlays and controls relating to land use and native vegetation removal.
+L008 - Aboriginal Heritage Act 2006 (Vic): Protect cultural heritage and ensure CHMP requirements are considered where applicable.
+L015 - Agricultural and Veterinary Chemicals (Control of Use) Act 1992 (Vic): Use licensed operators, maintain application records, comply with buffer zones and chemical use restrictions.
+L016 - Agricultural and Veterinary Chemicals Code Act 1994 (Cth): Follow APVMA-approved label directions and restrictions on off-label use.
+L017 - Wildlife Act 1975 (Vic): Manage wildlife handling, fauna salvage and vertebrate pest control lawfully.
+
+Quality (ISO 9001):
+L018 - Client Environmental Management Plans (EMPs): Meet contract-specific environmental and operational requirements, reporting obligations and KPIs.
+L019 - Local Council Permit Conditions: Comply with local permit conditions such as hours of operation, access constraints and vegetation protection measures.
+L020 - AS 4373:2007 — Pruning of Amenity Trees: Perform pruning works in line with recognised best practice for tree health, structure and client quality expectations.
+
+Other Notes:
+- The legal register must be reviewed quarterly and maintained in the IMS DMS.  
+- For project HSEQMPs, reference the above L-codes (e.g., L001, L015) when mapping controls to legal obligations.
